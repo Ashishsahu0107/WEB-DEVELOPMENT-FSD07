@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <div>
+      <h1>Doctor Appoinment Form</h1>
+      <hr />
+      <form>
+        <label for="date">Appointment Date</label>
+        <input type="date" name="appointment-Date" id="date" /><br /><br />
+        <label for="time">Appointment Time</label>
+        <input type="time" name="appointment-time" id="time" /><br /><br />
+        <label for="name">Name</label>
+        <input type="text" name="first-name" id="name" placeholder="First" />
+        <input
+          type="text"
+          name="first-name"
+          id="name"
+          placeholder="Last"
+        /><br /><br />
+
+        <span>Gender</span>
+        Male <input type="radio" name="gender" /> Female
+        <input type="radio" name="gender" /><br /><br />
+
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name="phone-number"
+          id="phone"
+          placeholder="# # # #"
+        /><br /><br />
+
+        <span>Address </span><input type="text" name="city" name="city" />
+        <input type="text" name="state" placeholder="state" /><br /><br />
+
+        <label for="your-query">Your Query</label>
+        <textarea
+          name="your-query"
+          id="your-query"
+          rows="6"
+          cols="30"
+        ></textarea
+        ><br /><br />
+
+        <div style="display: flex; gap: 20px">
+          <span>Appointment Type </span>
+          <span>
+            Select which appoint type(s) you require <br />
+            <input type="checkbox" /><span>Cervix checkup</span> <br />
+            <input type="checkbox" /><span>Heart checkup</span> <br />
+            <input type="checkbox" /><span>Eye check-up </span><br />
+            <input type="checkbox" /><span>Hearing Test</span> <br />
+            <br>
+            <button type="submit">Send</button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
