@@ -1,0 +1,32 @@
+*{
+    color : rgb(0, 0, 0);
+}
+
+/* body{
+    background: #c800ff;
+} */
+
+table tr{
+    background: #06ff55;
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+button{
+    background: #16b6d2;
+    width: 10%;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+button a{
+    color: #000000;
+}
+
+
+
+
+
