@@ -2,16 +2,26 @@
     color : rgb(0, 0, 0);
 }
 
-/* body{
-    background: #c800ff;
-} */
+body{
+    background-color: #ddf8dd;
+}
+
+table{
+    
+}
 
 table tr{
-    background: #06ff55;
+    background: #aff2af;
+    border: 3px solid red;
+    border-radius: 10px;
 }
+
+
 
 a{
     color: rgb(0, 0, 0);
+    padding: 4px;
+    background-color: #00e900;
 }
 
 button{
@@ -24,9 +34,28 @@ button{
 
 button a{
     color: #000000;
+    background: #16b6d2;
 }
 
 
+
+fieldset legend h1 u {
+    color: rgb(27, 205, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+fieldset h1{
+    color: red;
+}
+
+footer table tr td a{
+    border: 3px solid black;   
+}
+
+
+table tr th{
+    
+}
 
 
 
