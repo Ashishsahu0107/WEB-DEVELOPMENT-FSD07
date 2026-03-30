@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  padding: 40px;
+  background-color: #4070f3;
+}
+
+.login {
+  width: 330px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.login-heading span {
+  border-bottom: 5px solid #4070f3;
+}
+
+.login-heading {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.mail {
+  border-bottom: 2px solid black;
+}
+
+.pass {
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  border: none;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  padding: 8px;
+}
+
+#remember-me{
+  border: 6px solid black;
+}
+
+
+input {
+  border: none;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 350px;
+  padding: 10px 10px 8px;
+}
+
+.pass-login{
+  display: flex;
+  padding-top: 2px;
+}
+
+.rem-forget {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rem-forget div{
+  display: flex;
+}
+
+.rem-forget div input{
+  width: 20px;
+  margin-right: 8px;
+}
+
+.register {
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.register h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.register h2 span {
+  border-bottom: 5px solid #4070f3;
+}
+
+button {
+  padding: 15px 0 15px;
+  background-color: #4070f3;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+}
+
+
+
+.login-to-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-to-signup p,
+a {
+  padding: 2px;
+}
+
+.pass-login input{
+  width: 250px;
+  margin-left: 5px
+}
+
+a{
+  text-decoration: none;
+  color: #4070f3;
+}
