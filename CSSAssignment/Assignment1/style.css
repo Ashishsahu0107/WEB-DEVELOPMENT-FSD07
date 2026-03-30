@@ -5,9 +5,9 @@
 }
 
 .main {
-  width: 100%;
+  width: 95%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: end;
   padding: 40px;
   background-color: #4070f3;
@@ -32,6 +32,7 @@
   font-size: 30px;
   margin-bottom: 40px;
 }
+
 
 .mail {
   border-bottom: 2px solid black;
@@ -135,4 +136,9 @@ a {
 a{
   text-decoration: none;
   color: #4070f3;
+}
+
+svg{
+  width: 20px;
+  height: 20px;
 }
