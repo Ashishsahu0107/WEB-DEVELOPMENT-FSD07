@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.navbar {
+  margin: 0 50px 0;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navInner {
+  display: flex;
+  gap: 100px;
+
+  .navLinks {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.numberBtn {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+
+  #btn {
+    padding: 15px;
+    background-color: #125785;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 6px 6px 2px 0 #79b6de;
+    cursor: pointer;
+  }
+}
+
+main {
+  padding: 50px;
+  margin: 20px 150px 0;
+
+  button{
+    padding: 20px 35px;
+    border-radius: 35px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+  }
+}
+
+.heroSection {
+  margin: 50px 200px;
+  padding: 80px 10px;
+  border-radius: 10px;
+  background-color: #eaf8fe;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+
+  .form-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  select {
+    font-size: 17px;
+    width: 425px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid gray;
+  }
+
+  .email {
+    width: 650px;
+  }
+
+  .qualification {
+    width: 200px;
+  }
+
+  .contact {
+    width: 910px;
+  }
+
+  .college {
+    width: 910px;
+  }
+
+  .select {
+    width: 460px;
+  }
+}
+
+.formInput{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    .first{
+        width: 50%;
+        display: grid;
+        gap: 20px;
+
+        .first-checkbox{
+            display: flex;
+            gap: 10px;
+            
+        }
+    }
+
+    .second{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    select, .contact-number {
+    font-size: 17px;
+    width: 425px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid gray;
+  }
+}
+
+
