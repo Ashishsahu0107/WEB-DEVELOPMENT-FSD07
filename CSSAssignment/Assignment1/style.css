@@ -1,27 +1,33 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: cursive;
 }
 
 .main {
-  width: 95%;
+  /* height: 100vh; */
   display: flex;
+  background-color: #4070F3;
   justify-content: space-around;
   align-items: end;
-  padding: 40px;
-  background-color: #4070f3;
+  padding: 43px;
 }
 
 .login {
   width: 330px;
   height: 400px;
   border-radius: 10px;
-  background-color: #ffffff;
-  padding: 30px;
-  display: flex;
+  background-color: #fff;
+  
+  display: grid;
+  gap: 30px;
+  padding: 40px;
+  align-items: center;
+
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 }
 
 .login-heading span {
@@ -35,11 +41,11 @@
 
 
 .mail {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid gray;
 }
 
 .pass {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +113,7 @@ input {
 
 button {
   padding: 15px 0 15px;
-  background-color: #4070f3;
+  background-color: #4070F4;
   border: none;
   border-radius: 10px;
   color: white;

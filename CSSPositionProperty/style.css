@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: aquamarine;
+    padding: 0 20px;
+    color: black;
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+a p button h2{
+    cursor: pointer;
+}
+
+.rela{
+    re
+}
