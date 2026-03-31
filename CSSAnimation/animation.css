@@ -1,0 +1,63 @@
+#div1 {
+  width: 40px;
+  border: 1px solid black;
+  height: 20px;
+  overflow: hidden;
+  text-wrap-mode: nowrap;
+  transition:
+    width 15s linear,
+    color 2s ease-in,
+    padding 2s linear,
+    padding 2s linear;
+}
+
+#div1:hover {
+  width: 380px;
+  color: blue;
+  padding: 50px;
+  /* transition: width 10s ease-in-out 2s; */
+}
+
+#div2{
+    width: 200px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: auto;
+    color: red;
+    transition: transform 18s linear;
+}
+
+button{
+    background-color: blue;
+    box-shadow: 3px 3px 3px 0 red;
+    transform: scale(3px 3px);
+    transition: transform 0.2s linear;
+}
+
+button:hover{
+    transform: scale(30px 30px);
+
+}
+
+
+/* #div2:hover{
+    transform: rotateZ(65536deg);
+    transform: rotatey(65536deg);
+
+} */
+
+
+ /* #div2:hover{
+    transform: scale(1.5,1.6);
+}  */
+
+
+#div2:hover{
+    transform: skew(90deg);
+}
+#div2:hover{
+    transform: translate();
+}
+
+
+
