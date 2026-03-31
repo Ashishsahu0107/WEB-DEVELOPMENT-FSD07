@@ -10,6 +10,7 @@ header {
   top: 0;
   z-index: 999;
   background-color: white;
+  box-shadow: 0 0 7px 0 gray;
 }
 
 .navbar {
@@ -57,12 +58,13 @@ main {
   padding: 50px;
   margin: 20px 150px 0;
 
-  button{
+  button {
     padding: 20px 35px;
     border-radius: 35px;
     color: white;
     background-color: black;
     font-size: 20px;
+    box-shadow: 5px 7px 2px 0 gray;
   }
 }
 
@@ -127,36 +129,36 @@ main {
   }
 }
 
-.formInput{
+.formInput {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+
+  .first {
+    width: 50%;
+    display: grid;
+    gap: 20px;
+
+    .first-checkbox {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .second {
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .first{
-        width: 50%;
-        display: grid;
-        gap: 20px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-        .first-checkbox{
-            display: flex;
-            gap: 10px;
-            
-        }
-    }
-
-    .second{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .item{
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    select, .contact-number {
+  select,
+  .contact-number {
     font-size: 17px;
     width: 425px;
     padding: 20px;
@@ -165,4 +167,121 @@ main {
   }
 }
 
+footer {
+  background-color: #125785;
+}
 
+#footer {
+  padding: 100px 100px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 100wh;
+
+  height: 50vh;
+  color: white;
+
+  .foot-first {
+    display: grid;
+    gap: 20px;
+    line-height: 30px;
+
+    p {
+      color: rgb(223, 213, 213);
+    }
+  }
+
+  .foot-second {
+    display: grid;
+    gap: 30px;
+
+    div {
+      display: grid;
+      gap: 23px;
+
+      a {
+        color: rgb(223, 213, 213);
+      }
+    }
+  }
+
+  .foot-third {
+    display: grid;
+    gap: 25px;
+
+    a {
+      color: rgb(223, 213, 213);
+    }
+  }
+  .foot-fourth {
+    display: grid;
+    gap: 30px;
+
+    .fourth-first {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+
+      span {
+        color: rgb(223, 213, 213);
+        line-height: 20px;
+      }
+    }
+    .fourth-second {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+
+      a {
+        color: rgb(223, 213, 213);
+      }
+    }
+    .fourth-third {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+
+      a {
+        color: rgb(223, 213, 213);
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 20px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #eaf8fe;
+        align-items: center;
+      }
+    }
+  }
+}
+
+hr {
+  width: 100%;
+  color: #357097;
+}
+
+.footer-first {
+  padding: 50px;
+
+  a {
+    color: #eaf8fe;
+  }
+
+  .footer-first-inner {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      margin-top: 20px;
+      color: #eaf8fe;
+    }
+  }
+}
