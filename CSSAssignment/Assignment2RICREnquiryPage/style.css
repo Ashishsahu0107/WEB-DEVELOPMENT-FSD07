@@ -149,6 +149,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    .para-second{
+      font-weight: bold;
+    }
   }
 
   .item {
@@ -157,10 +161,16 @@ main {
     gap: 8px;
   }
 
-  select,
+  select{
+    font-size: 17px;
+    width: 459px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid gray;
+  }
   .contact-number {
     font-size: 17px;
-    width: 425px;
+    width: 420px;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid gray;
