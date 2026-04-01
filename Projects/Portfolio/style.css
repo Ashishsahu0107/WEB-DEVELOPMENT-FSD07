@@ -1,3 +1,148 @@
 *{
-    
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", monospace;
 }
+
+header{
+    height: 10vhpx;
+    background-color: rgb(234, 255, 2);
+    border: none;
+    padding: 5px 40px 0;
+    position: sticky;
+    top: 0px;
+
+    img{
+        height: 70px;
+    }
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0 0;
+    align-items: center;
+}
+
+.login-left{
+    display: grid;
+    gap: 30px;
+    width: 40%;
+
+    .leftText{
+        display: grid;
+        gap: 20px;
+    }
+
+    .leftInner{
+        display: grid;
+        gap: 25px;
+
+        .input{
+            display: grid;
+            gap: 10px;
+            width: 100%;
+        }
+
+        input{
+            padding: 15px 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            
+        }
+
+        .remember{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn{
+            padding: 15px 0;
+            background-color: #3869EB;
+            border: none;
+            border-radius: 5px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    #horizontal-line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+
+        hr{
+            width: 36%;
+        }
+    }
+
+    .button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        
+        
+
+        button{
+            width: 25%;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #1877F2;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            justify-content: center;
+
+            img{
+                width: 25%;
+            }
+
+            .img{
+                width: 20%;
+            }
+
+            .img1{
+                width: 35%;
+            }
+
+
+        }
+    }
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(222, 52, 52);
+}
+
+
+
+.login-right{
+    width: 30%;
+
+    img{
+        height: 550px;
+    }
+}
+
+
+.register{
+    display: flex;
+}
+
+
+
