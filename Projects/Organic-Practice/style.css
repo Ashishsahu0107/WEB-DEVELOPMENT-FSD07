@@ -92,6 +92,7 @@ main{
 
     .main{
         position: relative;
+        margin-bottom: 40px;
     }
     
     img{
@@ -131,15 +132,49 @@ main{
     .btnMain{
         display: flex;
         gap: 20px;
+        padding-top: 20px;
+    }
+
+
+    .btnMain button:first-child{
+      background-color: #6BB252;
     }
 
     .btnMain button{
         padding: 15px; 
-        border-radius: 20px; 
-        background-color: #6BB252; 
+        border: none;
+        border-radius: 25px; 
+        background-color: #000000;
+        font-size: 20px; 
+        color: white;
+
     }
 
+    .visiters{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
 
+      h1{
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+
+    .mainCard{
+      position: absolute;
+      display: flex;
+      bottom: 4px;
+      width: 100%;
+      justify-content: space-between;
+
+      .card{
+        width: 30%;
+        height: 40px;
+        background-color: rgb(237, 20, 20);
+      }
+    }
 }
 
 

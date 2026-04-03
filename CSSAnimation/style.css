@@ -16,12 +16,12 @@
     }
     50%{
         top: 500px;
-        right: 500px;
+        left: 500px;
         background-color: rgb(4, 254, 41);
     }
     75%{
         top: 500px;
-        right: 0 px;
+        left: 0px;
         background-color: rgb(218, 255, 7);
     }
     100%{
@@ -39,3 +39,21 @@
   position: absolute;
   animation: ashish 10s linear 0s infinite;
 }
+
+
+
+/* transition : propertyname time/duration timing function delay;
+
+timimg function - linear, eaes-in, ease-out, ease-in-out; 
+
+*/
+
+
+/* transform - rotate , rotate, sqew, translate 
+
+
+
+
+
+
+*/
