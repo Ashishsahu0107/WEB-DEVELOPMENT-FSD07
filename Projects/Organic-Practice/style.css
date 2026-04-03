@@ -16,7 +16,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 70px;
- 
 }
 
 .item {
@@ -30,7 +29,7 @@ header {
   background-color: #f8f8f8;
   border: none;
   border-radius: 10px;
-  padding: 5px 15px;    
+  padding: 5px 15px;
 
   .fa-solid {
     padding: 10px;
@@ -82,102 +81,213 @@ input:focus {
   }
 }
 
-i{
-    font-size: 22px;
+i {
+  font-size: 22px;
 }
 
 /* Main section */
 
-main{
+main {
+  .main {
+    position: relative;
+    margin-bottom: 40px;
+  }
 
-    .main{
-        position: relative;
-        margin-bottom: 40px;
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .mainheading {
+    position: absolute;
+    display: grid;
+    gap: 20px;
+    top: 15%;
+    left: 2%;
+    width: 50%;
+  }
+
+  .mainheading h1 {
+    font-weight: 500;
+    font-size: 70px;
+  }
+
+  .mainheading h1 span:first-child {
+    color: #6bb252;
+    font-weight: bold;
+  }
+
+  .mainheading h1 span {
+    font-weight: 600;
+  }
+  .mainheading p {
+    font-size: 20px;
+    color: #747474;
+  }
+
+  .btnMain {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .btnMain button:first-child {
+    background-color: #6bb252;
+  }
+
+  .btnMain button {
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #000000;
+    font-size: 20px;
+    color: white;
+  }
+
+  .visiters {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
     }
-    
-    img{
-        width: 100%;
-        height: 100vh;
-        
-    }
+  }
 
-    .mainheading{
-        position: absolute;
-        display: grid;
-        gap: 20px;
-        top: 15%;
-        left: 2%;
-        width: 50%;
-        
-    }
+  .mainCard {
+    position: absolute;
+    display: flex;
+    bottom: 3px;
+    padding: 0 15px;
+    width: 98%;
+    justify-content: space-between;
+    color: white;
 
-    .mainheading h1{
-        font-weight: 500;
-        font-size: 76px;
-    }
-
-    .mainheading h1 span:first-child{
-        color: #6bb252;
-        font-weight: bold;
-    }
-
-    .mainheading h1 span{
-        font-weight: 600;
-    }
-    .mainheading p{
-        font-size: 20px;
-        color: #747474;
-    }
-
-    .btnMain{
-        display: flex;
-        gap: 20px;
-        padding-top: 20px;
-    }
-
-
-    .btnMain button:first-child{
-      background-color: #6BB252;
-    }
-
-    .btnMain button{
-        padding: 15px; 
-        border: none;
-        border-radius: 25px; 
-        background-color: #000000;
-        font-size: 20px; 
-        color: white;
-
-    }
-
-    .visiters{
-      margin-top: 20px;
+    .card {
+      justify-content: center;
       display: flex;
       align-items: center;
+      width: 30%;
       gap: 20px;
-
-      h1{
-        font-size: 40px;
-        font-weight: bold;
-      }
+      padding: 2%;
+      background-color: rgb(237, 20, 20);
     }
 
-    .mainCard{
-      position: absolute;
-      display: flex;
-      bottom: 4px;
-      width: 100%;
-      justify-content: space-between;
-
-      .card{
-        width: 30%;
-        height: 40px;
-        background-color: rgb(237, 20, 20);
-      }
+    .card1 {
+      background-color: #6bb252;
     }
+    .card2 {
+      background-color: #364127;
+    }
+    .card3 {
+      background-color: #f95f09;
+    }
+
+    i {
+      font-size: 40px;
+    }
+  }
 }
 
+section {
+  padding: 50px;
+
+  .category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .view {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:first-child {
+      padding: 10px;
+      font-size: 15px;
+      background-color: #6bb252;
+    }
+
+    button:hover {
+      background-color: orange;
+    }
+
+    i {
+      padding: 15px;
+      font-size: 10px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow-x: scroll;
+
+    .cards1 {
+      display: grid;
+      gap: 10px;
+      justify-items: center;
+      align-items: center;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.cards-second {
+  display: grid;
+  justify-items: center;
+  width: 20%;
+  gap: 10px;
+  margin: 0 0 30px;
+
+  .ratingCard {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .btnoff {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  button {
+    padding: 7px;
+    border: 1px solid rgb(178, 176, 176);
+    background-color: #ffffff;
+    color: #b8b5b5;
+    border-radius: 5px;
+  }
+
+  .cart{
+    display: flex;
+    gap: 5px;
 
 
 
+    input{
+      font-size: 20px;
+      border-radius: 5px;
+      width: 40px;
+      padding: 5px;
+      border: 1px solid #cbc8c8;
+    }
 
+    button{
+      width: 80px;
+    }
+  }
+}
