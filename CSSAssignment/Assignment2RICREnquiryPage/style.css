@@ -58,8 +58,7 @@ a {
   }
 }
 
-button:hover{
-
+button:hover {
 }
 
 /* ===== MAIN BUTTON ===== */
@@ -89,7 +88,7 @@ main button {
 /* ===== HERO SECTION ===== */
 .heroSection {
   margin: 40px auto;
-  padding: 40px 20px;
+  padding: 40px 40px;
   border-radius: 10px;
   background-color: #eaf8fe;
   display: flex;
@@ -169,10 +168,16 @@ main button {
   gap: 15px;
 }
 
-.select,
+.select {
+  width: 90%;
+  padding: 11px;
+  /* cursor: not-allowed; */
+}
 .contact-number {
-  width: 100%;
-  padding: 12px;
+  width: 85%;
+  padding: 11px;
+  /* cursor: not-allowed; */
+  cursor: progress;
 }
 
 /* ===== FOOTER ===== */
@@ -261,13 +266,17 @@ footer {
   .heroSection {
     padding: 30px 15px;
   }
+  .item input {
+    width: 90%;
+
+    .contact-number {
+      width: 60%;
+    }
+  }
+
 }
 
 @media (max-width: 480px) {
-  .heroSection {
-    width: 100%;
-  }
-
   .form-heading h1 {
     font-size: 22px;
   }
@@ -297,7 +306,21 @@ footer {
     color: rgb(0, 0, 0);
   }
 
+  .select {
+  width: 90%;
+  padding: 11px;
+  /* cursor: not-allowed; */
+  cursor: progress;
+}
+.contact-number {
+  width: 85%;
+  padding: 11px;
+  /* cursor: not-allowed; */
+  cursor: progress;
+}
+
   #footer {
+    grid-template-columns: auto auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
