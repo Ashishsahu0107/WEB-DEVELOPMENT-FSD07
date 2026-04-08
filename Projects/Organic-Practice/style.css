@@ -1,13 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", Courier, monospace;
 }
 
 header {
   height: 70px;
   background-color: white;
-  padding: 6px 20px;
+  padding: 0px 50px;
   position: sticky;
 }
 
@@ -85,14 +86,6 @@ i {
   font-size: 22px;
 }
 
-/* Main section */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* ===== MAIN SECTION ===== */
 
 .main {
@@ -109,7 +102,7 @@ i {
 .mainheading {
   position: absolute;
   display: grid;
-  gap: 20px;
+  gap: 40px;
   top: 15%;
   left: 5%;
   width: 50%;
@@ -117,7 +110,7 @@ i {
 
 .mainheading h1 {
   font-weight: 500;
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .mainheading h1 span:first-child {
@@ -133,7 +126,7 @@ i {
 /* buttons */
 .btnMain {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -158,7 +151,7 @@ i {
 .visiters {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .visiters h1 {
@@ -177,6 +170,7 @@ i {
 .card {
   flex: 1;
   display: flex;
+  height: 150px;
   align-items: center;
   gap: 15px;
   padding: 15px;
@@ -191,38 +185,43 @@ i {
   font-size: 30px;
 }
 
-/* ===== CATEGORY SECTION ===== */
+/* ===== Best selling products ===== */
 
 section {
-  padding: 40px 20px;
+  padding:20px 20px;
 }
 
 .category {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 30px 0;
 }
 
 .view {
   display: flex;
   gap: 10px;
+
+  button:first-child{
+    padding: 5px;
+  }
 }
 
 .cards {
   display: flex;
-  gap: 20px;
+  gap: 80px;
   overflow-x: auto;
   padding-top: 20px;
 }
 
 .cards1 {
-  min-width: 120px;
+  min-width: 150px;
   text-align: center;
 }
 
 .cards img {
-  width: 80px;
-  height: 80px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
 }
 
@@ -230,11 +229,21 @@ section {
 
 .cards-second {
   display: grid;
-  width: 355px;
+  width: 300px;
   gap: 20px;
   border: none;
+  align-items: center;
   justify-content: center;
+
 }
+
+.cards-second:hover{
+  border-radius: 10px;
+    box-shadow: 0 0 10px 5px gray;
+    .cart{
+      opacity: 1;
+    }
+  }
 
 .cards-second div {
   padding: 5px;
@@ -246,6 +255,7 @@ section {
   display: flex;
   gap: 3px;
   justify-content: center;
+  align-items: center;
 }
 
 .btnoff {
@@ -260,6 +270,7 @@ section {
   gap: 10px;
   margin-top: 10px;
   justify-content: center;
+  opacity: 0;
 }
 
 .cart input {
@@ -268,5 +279,6 @@ section {
 }
 
 .cart button{
-  padding: 6px 20px;
+  padding: 6px 30px;
 }
+
