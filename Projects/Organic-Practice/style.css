@@ -168,10 +168,9 @@ i {
 /* cards */
 .mainCard {
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   width: 100%;
   display: flex;
-  gap: 15px;
   padding: 0 15px;
 }
 
@@ -231,23 +230,27 @@ section {
 
 .cards-second {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 355px;
   gap: 20px;
+  border: none;
+  justify-content: center;
 }
 
-.cards-second > div {
-  padding: 15px;
+.cards-second div {
+  padding: 5px;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
 
 .ratingCard {
   display: flex;
-  gap: 5px;
+  gap: 3px;
+  justify-content: center;
 }
 
 .btnoff {
   display: flex;
+  justify-content: center;
   gap: 10px;
   align-items: center;
 }
@@ -256,6 +259,7 @@ section {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  justify-content: center;
 }
 
 .cart input {
@@ -263,53 +267,6 @@ section {
   padding: 5px;
 }
 
-.cart button {
-  padding: 6px 10px;
-}
-
-/* ========================= */
-/* 📱 RESPONSIVE MEDIA QUERY */
-/* ========================= */
-
-/* Tablet */
-@media (max-width: 992px) {
-  .mainheading {
-    width: 70%;
-  }
-
-  .mainheading h1 {
-    font-size: 40px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-
-  .mainheading {
-    position: static;
-    width: 100%;
-    padding: 20px;
-  }
-
-  .main img {
-    height: auto;
-  }
-
-  .mainCard {
-    position: static;
-    flex-direction: column;
-  }
-
-  .mainheading h1 {
-    font-size: 28px;
-  }
-
-  .visiters {
-    flex-direction: column;
-  }
-
-  .category {
-    flex-direction: column;
-    gap: 10px;
-  }
+.cart button{
+  padding: 6px 20px;
 }
