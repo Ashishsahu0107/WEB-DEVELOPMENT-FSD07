@@ -10,6 +10,7 @@ header {
   background-color: white;
   padding: 0px 50px;
   position: sticky;
+  top: 0;
 }
 
 .navbar {
@@ -26,28 +27,28 @@ header {
   gap: 30px;
 }
 
+/* FIX 1: nested hata diya */
 .item2 {
   background-color: #f8f8f8;
-  border: none;
   border-radius: 10px;
   padding: 5px 15px;
-
-  .fa-solid {
-    padding: 10px;
-    color: #908c8c;
-  }
-
-  select {
-    padding: 10px;
-    background-color: #f8f8f8;
-    border: none;
-    border-radius: 5px;
-    color: #908c8c;
-  }
 }
 
+.item2 .fa-solid {
+  padding: 10px;
+  color: #908c8c;
+}
+
+.item2 select {
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+  color: #908c8c;
+}
+
+/* FIX 2 */
 select:focus {
-  background-color: none;
   outline: 5px solid #0dcaf0;
 }
 
@@ -58,28 +59,33 @@ select:focus {
   width: 230px;
 }
 
+/* FIX 3 */
 input:focus {
-  outline: none;
   outline: 5px solid #0dcaf0;
   border-radius: 5px;
 }
 
-.item3 {
-  a,
-  select {
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    border: none;
-    font-weight: bold;
-    width: 90px;
-    padding: 0px;
-  }
+/* FIX 4: nested hata ke alag likha */
+.item3 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  border: none;
+  font-weight: bold;
+  width: 90px;
+}
 
-  select:focus {
-    outline: none;
-    border: none;
-  }
+.item3 select {
+  font-size: 18px;
+  color: black;
+  border: none;
+  font-weight: bold;
+  width: 90px;
+}
+
+.item3 select:focus {
+  outline: none;
+  border: none;
 }
 
 i {
@@ -188,10 +194,10 @@ i {
 /* ===== Best selling products ===== */
 
 section {
-  padding:20px 20px;
+  padding: 20px 20px;
 }
 
-.catagorymain{
+.catagorymain {
   padding: 0px 20px;
 }
 
@@ -202,13 +208,14 @@ section {
   padding: 30px 40px;
 }
 
+/* FIX 5 */
 .view {
   display: flex;
   gap: 10px;
+}
 
-  button:first-child{
-    padding: 5px;
-  }
+.view button:first-child {
+  padding: 5px;
 }
 
 .cards {
@@ -230,32 +237,30 @@ section {
 }
 
 /* ===== PRODUCT SECTION ===== */
-.products{
+.products {
   display: flex;
   flex-wrap: wrap;
   margin-left: 15px;
 }
-
 
 .cards-second {
   display: grid;
   width: 290px;
   padding: 10px 10px;
   gap: 20px;
-  border: none;
   align-items: center;
   justify-content: center;
-
 }
 
-.cards-second:hover{
+/* FIX 6: nested hata diya */
+.cards-second:hover {
   border-radius: 10px;
-  border: none;
-    box-shadow: 0 0 10px 5px gray;
-    .cart{
-      opacity: 1;
-    }
-  }
+  box-shadow: 0 0 10px 5px gray;
+}
+
+.cards-second:hover .cart {
+  opacity: 1;
+}
 
 .ratingCard {
   display: flex;
@@ -284,7 +289,6 @@ section {
   padding: 5px;
 }
 
-.cart button{
+.cart button {
   padding: 6px 30px;
 }
-
