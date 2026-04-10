@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #c2410c; /* Brand orange-red */
+  --color-primary-content: #ffffff;
+  --color-secondary: #6b7280; /* Muted gray text */
+  --color-neutral: #3f3f46; /* Dark sections (footer, bars) */
+  --color-neutral-content: #f4f4f5; /* Text on dark backgrounds */
+  --color-base-100: #fff8f1; /* Warm white page background */
+  --color-base-200: #f5ede5; /* Slightly darker warm white */
+  --color-base-300: #e7d9c9; /* Borders and dividers */
+  --color-base-content: #2d1b10; /* Default dark text */
+  --color-error: #ef4444; /* Red for error states */
+  --color-success: #22c55e; /* Green for success states */
+}
+
+.navbar {
+  background-color: var(--color-primary);
+  height: 70px;
+  z-index: 999;
+
+  img {
+    width: 180px;
+  }
+
+  .login:hover {
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+  }
+}
+
+.images img {
+  height: 600px;
+}
+
+.image-position {
+    position: absolute;
+    top: 130px;
+    width: 100vw;
+
+    .input{
+      width: 800px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+
+      input{
+        width: 100%;
+        border: none;
+      }
+    }
+
+    .btn:first-child{
+      background-color: var(--color-primary);
+      color: #ffffff;
+    }
+}
+
+.featuredRestaurants{
+  background: linear-gradient(var(--color-primary), white);
+  width: 100%;
+  height: 90vh;
+}
+
+
