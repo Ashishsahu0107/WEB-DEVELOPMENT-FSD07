@@ -13,9 +13,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
 
-  <body>
+  <body class="d-grid">
     <header>
       <nav
         class="navbar justify-content-between align-items-center px-5 position-static"
@@ -71,31 +75,227 @@
       </div>
     </div>
     <section class="featuredRestaurants">
-      <div class="container">
-        <div class="container-fluid p-5">
-          <h1>Featured Restaurants</h1>
-          <p>3 restaurants available</p>
-          <div class="card" style="width: 18rem">
-            <img
-              src="./Images/restaurant-card1.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5>Under The Mango Tree</h5>
-              <p class="card-text">
-                Enjoy the thrill of grill and barbecue at Under The Mango Tree
-                restaurant at Jehan Numa Palace, Bhopal. Head here now!
-              </p>
-              <div>
-                <button class="btn btn-info">indian</button>
-                <button class="btn btn-info">chineese</button>
-                <button class="btn btn-info">ittalian</button>
+      <div class="container py-4">
+        <div class="container-fluid px-4 text-white">
+          <div class="mb-4">
+            <h1>Featured Restaurants</h1>
+            <p>3 restaurants available</p>
+          </div>
+          <div class="row d-flex justify-content-evenly gap-5">
+            <div class="col-12 card card1 p-0" style="width: 23rem">
+              <div class="position">
+                <img
+                  src="./Images/restaurant-card1.png"
+                  class="card-img-top position-relative"
+                  alt="..."
+                />
+                <!--  -->
+                <button type="button" class="btn btn-primary badges">
+                  <i class="fa-solid fa-star text-white"></i>
+                  <span class="">3.6</span>
+                </button>
+                <!--  -->
+              </div>
+              <div class="card-body">
+                <h5>Under The Mango Tree</h5>
+                <p class="card-text">
+                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
+                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
+                </p>
+                <div class="card-btn">
+                  <button class="btn">indian</button>
+                  <button class="btn">chineese</button>
+                  <button class="btn">ittalian</button>
+                </div>
+                <hr />
+                <div>
+                  <a href="" class="btn fw-bold text-white">Explore Menu</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card card1 p-0" style="width: 23rem">
+              <div class="position">
+                <img
+                  src="./Images/restaurant-card1.png"
+                  class="card-img-top position-relative"
+                  alt="..."
+                />
+                <!--  -->
+                <button type="button" class="btn btn-primary badges">
+                  <i class="fa-solid fa-star text-white"></i>
+                  <span class="">3.6</span>
+                </button>
+                <!--  -->
+              </div>
+              <div class="card-body">
+                <h5>Under The Mango Tree</h5>
+                <p class="card-text">
+                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
+                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
+                </p>
+                <div class="card-btn">
+                  <button class="btn">indian</button>
+                  <button class="btn">chineese</button>
+                  <button class="btn">ittalian</button>
+                </div>
+                <hr />
+                <div>
+                  <a href="#" class="btn fw-bold text-white">Explore Menu</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 card card1 p-0" style="width: 23rem">
+              <div class="position">
+                <img
+                  src="./Images/restaurant-card1.png"
+                  class="card-img-top position-relative"
+                  alt="..."
+                />
+                <!--  -->
+                <button type="button" class="btn btn-primary badges">
+                  <i class="fa-solid fa-star text-white"></i>
+                  <span class="">3.6</span>
+                </button>
+                <!--  -->
+              </div>
+              <div class="card-body">
+                <h5>Under The Mango Tree</h5>
+                <p class="card-text">
+                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
+                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
+                </p>
+                <div class="card-btn">
+                  <button class="btn">indian</button>
+                  <button class="btn">chineese</button>
+                  <button class="btn">ittalian</button>
+                </div>
+                <hr />
+                <div>
+                  <a href="#" class="btn fw-bold text-white">Explore Menu</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="analysis">
+        <div class="container">
+          <div class="container-fluid py-5">
+            <div class="text-center">
+              <h1>Cravings by the Numbers</h1>
+              <p>
+                See why millions trust us for their daily food delivery needs
+              </p>
+            </div>
+            <div class="row my-5 d-flex justify-content-center gap-4">
+              <div class="col-3 card border-0 shadow card1" style="width: 18rem">
+                <div class="border-0 p-4 text-center">
+                  <h1 class="card-title">2.5M+</h1>
+                  <p class="fw-bold">Successful Deliveries</p>
+                  <p>Orders delivered with care and precision</p>
+                </div>
+              </div>
+              <div class="col-3 card border-0 shadow card2" style="width: 18rem">
+                <div class="border-0 p-4 text-center">
+                  <h1 class="card-title">500K+</h1>
+                  <p class="fw-bold">Happy Customers</p>
+                  <p>Satisfied users enjoying delicious food</p>
+                </div>
+              </div>
+              <div class="col-3 card border-0 shadow card3" style="width: 18rem">
+                <div class="border-0 p-4 text-center">
+                  <h1 class="card-title">5K+</h1>
+                  <p class="fw-bold">Partner Restaurants</p>
+                  <p>Restaurants serving amazing cuisine</p>
+                </div>
+              </div>
+              <div class="col-3 card  shadow  border-0 card4" style="width: 18rem">
+                <div class="border-0 p-4 text-center">
+                  <h1 class="card-title">1K+</h1>
+                  <p class="fw-bold">Active Delivery Partners </p>
+                  <p>Riders ensuring quick and safe delivery</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="customers">
+        <div class="container">
+          <div class="container-fluid py-5">
+            <div class="text-center">
+              <h1>What Our Customers Say</h1>
+              <p>
+                Real feedback from real food lovers
+              </p>
+            </div>
+            <div class="row my-5 d-flex justify-content-center gap-4">
+              <div class="col-4 card border-0 shadow-lg gap-3 width card1 p-4" style="width: 20rem; height: 18rem; font-size: 12px;">
+                <div>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h4 class="card-title">Amazing Service!</h4>
+                <p>"The food arrived hot and fresh. The delivery was incredibly fast. Highly impressed with Cravings' service!"</p>
+               <div class="d-flex gap-3 align-items-start">
+                  <div class="rounded-circle d-flex justify-content-center align-items-center text-white fw-bold aj">AJ</div>
+                  <div>
+                    <h3>Arjun J.</h3>
+                    <p>Verified Buyer</p>
+                  </div>
+               </div>
+              </div>
+              <div class="col-4 card border-0 shadow-lg gap-3 width card1 p-4" style="width: 20rem; height: 18rem; font-size: 12px;">
+                <div>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h4 class="card-title">Amazing Service!</h4>
+                <p>"The food arrived hot and fresh. The delivery was incredibly fast. Highly impressed with Cravings' service!"</p>
+               <div class="d-flex gap-3 align-items-start">
+                  <div class="rounded-circle d-flex justify-content-center align-items-center text-white fw-bold aj">AJ</div>
+                  <div>
+                    <h3>Arjun J.</h3>
+                    <p>Verified Buyer</p>
+                  </div>
+               </div>
+              </div>
+              <div class="col-4 card border-0 shadow-lg gap-3 width card1 p-4" style="width: 20rem; height: 18rem; font-size: 12px;">
+                <div>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h4 class="card-title">Amazing Service!</h4>
+                <p>"The food arrived hot and fresh. The delivery was incredibly fast. Highly impressed with Cravings' service!"</p>
+               <div class="d-flex gap-3 align-items-start">
+                  <div class="rounded-circle d-flex justify-content-center align-items-center text-white fw-bold aj">AJ</div>
+                  <div>
+                    <h3>Arjun J.</h3>
+                    <p>Verified Buyer</p>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="BecomePartner text-center p-5 d-grid justify-content-center gap-4">
+        <h1>Become a Restaurant Partner</h1>
+        <p>Grow your business with Cravings. Join thousands of restaurants already delivering with us.</p>
+       <div>
+        <a href="#" class="btn bg-light fw-bold">Partner With Us</a>
+       </div>
+      </div>
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
