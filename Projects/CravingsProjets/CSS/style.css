@@ -18,10 +18,15 @@
   --color-success: #22c55e; /* Green for success states */
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
 .navbar {
   background-color: var(--color-primary);
-  height: 70px;
-  z-index: 999;
+  height: 64px;
 
   img {
     width: 180px;
@@ -38,88 +43,84 @@
 }
 
 .image-position {
-    position: absolute;
-    top: 130px;
-    width: 100vw;
+  position: absolute;
+  top: 130px;
+  width: 100vw;
 
-    .input{
+  .input {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    input {
       width: 100%;
-      height: 45px;
-      display: flex;
-      align-items: center;
-
-      input{
-        width: 100%;
-        border: none;
-      }
+      border: none;
     }
+  }
 
-    .btn:first-child{
-      background-color: var(--color-primary);
-      color: #ffffff;
-    }
+  .btn:first-child {
+    background-color: var(--color-primary);
+    color: #ffffff;
+  }
 }
 
-.featuredRestaurants{
+.featuredRestaurants {
   background: linear-gradient(var(--color-primary), white);
   width: 100%;
   height: 90vh;
 
-  a{
+  a {
     width: 100%;
     background: var(--color-primary);
   }
 }
 
-.card-btn .btn{
+.card-btn .btn {
   background: var(--color-base-300);
   font-size: 10px;
 }
 
-.card1:hover{
+.card1:hover {
   cursor: pointer;
   scale: 1.05;
   box-shadow: 0 0 15px 1px var(--color-secondary);
 }
 
-.analysis{
+.analysis {
   background: var(--color-base-100);
 
-  .card1{
-    h1{
+  .card1 {
+    h1 {
       color: var(--color-primary);
-      font-weight: bold ;
-    }
-  }
-  
-  .card2{
-    h1{
-      color: #D9468F;
       font-weight: bold;
     }
-
   }
-  .card3{
-    h1{
+
+  .card2 {
+    h1 {
+      color: #d9468f;
+      font-weight: bold;
+    }
+  }
+  .card3 {
+    h1 {
       color: var(--color-primary);
-      font-weight: bold ;
+      font-weight: bold;
     }
-
   }
-  .card4{
-    h1{
-      color: #D9468F;
-      font-weight: bold ;
+  .card4 {
+    h1 {
+      color: #d9468f;
+      font-weight: bold;
     }
-
   }
-
 }
 
-.position{
+.position {
   position: relative;
 
-  .badges{
+  .badges {
     background: var(--color-primary);
     position: absolute;
     border: none;
@@ -129,31 +130,30 @@
   }
 }
 
-.customers{
-
-  .card1{
+.customers {
+  .card1 {
     background: var(--color-base-100);
   }
 
-
-  .aj{
+  .aj {
     width: 50px;
     height: 50px;
     background: var(--color-primary);
   }
+  i{
+    color: #FDC700;
+  }
 }
 
-
-.BecomePartner{
+.BecomePartner {
   background: var(--color-primary);
   padding: 20px;
 
-  a{
+  a {
     width: 180px;
     height: 40px;
     color: var(--color-primary);
   }
+
+  
 }
-
-
-
