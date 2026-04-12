@@ -21,7 +21,7 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 9;
 }
 
 .navbar {
@@ -36,10 +36,21 @@ header {
     border: 1px solid rgb(255, 255, 255);
     color: white;
   }
+
+}
+
+.header-register{
+  color: var(--color-primary);
+}
+
+.header-register:hover{
+  background: transparent;
+  color: var(--color-base-100);
+  border: 1px solid var(--color-base-100);
 }
 
 .images img {
-  height: 600px;
+  height: 85vh;
 }
 
 .image-position {
@@ -69,11 +80,6 @@ header {
   background: linear-gradient(var(--color-primary), white);
   width: 100%;
   height: 90vh;
-
-  a {
-    width: 100%;
-    background: var(--color-primary);
-  }
 }
 
 .card-btn .btn {
@@ -149,7 +155,7 @@ header {
   background: var(--color-primary);
   padding: 20px;
 
-  a {
+  .partner-with-us  {
     width: 180px;
     height: 40px;
     color: var(--color-primary);
