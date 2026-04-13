@@ -71,14 +71,14 @@ header {
   }
 
   .btn:first-child {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary );
     color: #ffffff;
   }
 }
 
 .featuredRestaurants {
   background: linear-gradient(var(--color-primary), white);
-  width: 100%;
+  width: 100v;
   height: 90vh;
 }
 
@@ -87,7 +87,7 @@ header {
   font-size: 10px;
 }
 
-.card1:hover {
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
   cursor: pointer;
   scale: 1.05;
   box-shadow: 0 0 15px 1px var(--color-secondary);
