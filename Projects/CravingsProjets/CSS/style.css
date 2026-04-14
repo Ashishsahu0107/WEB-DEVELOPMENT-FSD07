@@ -21,7 +21,8 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 9;
+  z-index: 999  ;
+  width: 100%;
 }
 
 .navbar {
@@ -93,6 +94,10 @@ header {
   box-shadow: 0 0 15px 1px var(--color-secondary);
 }
 
+.explore-menu{
+  background: var(--color-primary);
+}
+
 .analysis {
   background: var(--color-base-100);
 
@@ -160,6 +165,69 @@ header {
     height: 40px;
     color: var(--color-primary);
   }
-
-  
 }
+
+.footer{
+  background: var(--color-neutral);
+}
+
+.images   {
+  background: #6f1a1a;
+}
+
+.about-rating{
+  background: var(--color-neutral);
+}
+
+.about-rating .container img{
+  object-fit: cover;
+}
+
+.container div h1{
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.born{
+  background: var(--color-base-200);
+}
+
+.our-story{
+  color: var(--color-primary);
+}
+
+.corevalues{
+  background: var(--color-base-300);
+}
+
+
+/* Order Now  */
+
+.featuredRestaurant-menu, .orderNow-top-input, .orderNow-top, input{
+  background: var(--color-base-200);
+}
+
+.featuredRestaurant-menu .orderNow-top-input .orderNow-top{
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  width: 80%;
+}
+
+::placeholder{
+  color: #E09C9B;
+}
+
+.featuredRestaurant-menu
+.orderNow-top-input input{
+  outline: none;
+
+}
+
+.orderNow-top-input{
+    position: sticky;
+    top: 0;
+    z-index: 998;
+}
+
+
