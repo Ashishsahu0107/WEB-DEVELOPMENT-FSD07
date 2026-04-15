@@ -254,12 +254,6 @@ hr{
   width: 25%;
 }
 
-
-/* .input-password{
-  border: 1px solid var(--color-primary);
-  border-radius: 5px;
-} */
-
 .form-control:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 1px var(--color-primary);
@@ -268,4 +262,32 @@ hr{
 .eye-login{
   right: 10px;
   top: 7px;
+}
+
+
+.team-section {
+  background-color: #f4efea;
+}
+
+.team-heading-small {
+  color: #c44b06;
+  letter-spacing: 3px;
+}
+
+.team-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #c44b06;
+}
+
+.cta-section {
+  background-color: #c44b06;
+}
+
+.get-started-btn {
+  color: #c44b06;
+}
+
+.contact-btn {
+  border: 2px solid white;
 }
