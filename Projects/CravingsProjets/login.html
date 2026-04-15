@@ -40,52 +40,92 @@
       </nav>
     </header>
 
-    <div>
-      <div>
-        <img
-          src="./Images/image.png"
-          class="d-block img-fluid w-100 about-image position-relative"
-          alt="..."
-          style="min-height: 90vh"
-        />
-      </div>
-      <form action="" class="">
-        <div
-          class="w-100 d-flex justify-content-start position-absolute form-login"
-        >
-          <div
-            class="image-position d-grid bg-white justify-content-center align-items-center gap-4 w-25 p-4"
+    <div
+      class="container-fluid min-vh-100 d-flex align-items-center"
+      style="background: url(./Images/image.png) center/cover no-repeat"
+    >
+      <div
+        class="card border-0 shadow-lg rounded-4 p-4 m-5 ms-md-5"
+        style="
+          width: 100%;
+          height: auto;
+          background-color: rgba(255, 255, 255, 0.95);
+          width: 100%;
+          max-width: 450px;
+        "
+      >
+        <div class="text-center mb-3">
+          <h1
+            class="fw-bold text-danger"
+            style="font-size: 30px; color: #c44b06 !important"
           >
-            <div class="text-center">
-              <h1>Welcome Back</h1>
-              <p>Login to your Cravings account</p>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" class="form-control" />
-            </div>
-            <div>
-              <label for="password">Email</label>
-              <input type="password" class="form-control" />
-            </div>
-            <div class="d-flex justify-content-between">
-              <div>
-                <input type="checkbox" name="" id="password" />
-                <label for="password"> Remember me </label>
-              </div>
-              <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="d-flex align-items-center justify-content-center">
-              <hr />
-              <span>Don't have an account?</span>
-              <hr />
-            </div>
-            <p><a href="./register.html">Create an account</a></p>
-          </div>
+            Welcome Back
+          </h1>
+          <p class="text-secondary fs-6">Login to your Cravings account</p>
         </div>
-      </form>
-      <div></div>
+
+        <form>
+          <div class="mb-3 email-login">
+            <label class="form-label fw-semibold fs-6">Email</label>
+            <input
+              type="email"
+              class="form-control input-login"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold fs-6">Password</label>
+            <div class="input-password position-relative">
+              <input
+                type="password"
+                class="form-control input-login"
+                placeholder="Enter your password"
+              />
+              <span class="eye-login border-0 position-absolute">
+                <i class="bi bi-eye"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="remember" />
+              <label class="form-check-label" for="remember">
+                Remember me
+              </label>
+            </div>
+
+            <a href="#" class="text-decoration-none" style="color: #c44b06">
+              Forgot Password?
+            </a>
+          </div>
+
+          <button
+            type="submit"
+            class="btn w-100 text-white fw-bold py-2 fs-6 mb-3"
+            style="background-color: #c44b06"
+          >
+            Login
+          </button>
+
+          <div class="d-flex align-items-center text-secondary mb-3">
+            <hr class="" />
+            <span class="px-3">Don't have an account?</span>
+            <hr class="" />
+          </div>
+
+          <div class="text-center">
+            <a
+              href="#"
+              class="fw-semibold text-decoration-none"
+              style="color: #c44b06"
+            >
+              Create an account
+            </a>
+          </div>
+        </form>
+      </div>
     </div>
 
     <footer class="footer text-light pt-5 pb-4 w-100">
