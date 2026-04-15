@@ -231,3 +231,25 @@ header {
 }
 
 
+/* About  */
+
+.heading-about-image{
+  font-size: 50px;
+}
+
+.heading-about-image span{
+  color: var(--color-primary);
+}
+
+
+/* login Page*/
+
+.form-login{
+  top: 0;
+  left: 20px;
+}
+
+hr{
+  border: 1px solid gray;
+  width: 50%;
+}
