@@ -71,7 +71,7 @@ header {
   }
 
   .btn:first-child {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
     color: #ffffff;
   }
 }
@@ -180,12 +180,12 @@ header {
   background: var(--color-neutral);
 }
 
-footer{
+footer {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 
-  a:hover{
+  a:hover {
     color: var(--color-primary) !important;
   }
 }
@@ -306,4 +306,54 @@ hr {
 
 .contact-btn {
   border: 2px solid white;
+}
+
+
+/* contact page */
+
+.contact-image{
+  height: 85vh !important;
+}
+
+.feedback-image{
+  height: 90vh !important;
+}
+
+
+
+/* help center */
+
+.help-center-input{
+  background: #9D9FA1 !important;
+  color: #444343;
+  border: 0px solid #9D9FA1;
+}
+
+.btn-help-center{
+  background: var(--color-primary);
+  color: var(--color-base-100);
+}
+
+.questionmark-icon{
+  color: var(--color-primary);
+}
+
+
+/* privacy and policy */
+
+.policy{
+  color: var(--color-primary) !important;
+}
+
+.privacy-second-section{
+  background: var(--color-base-100) ;
+}
+
+.accordion-item{
+  background: var(--color-base-100) ;
+  border: 1px solid #E7D9C9;
+}
+
+ul li::marker {
+    color: var(--color-primary);
 }
