@@ -13,7 +13,7 @@
 
 <body class="d-grid">
     <header>
-        <nav class="navbar d-flex justify-content-between align-items-center px-lg-5 px-md-4 px-sm-3 px-1 ">
+        <nav class="navbar d-flex justify-content-between align-items-center px-lg-5 px-md-4 px-sm-3 px-1">
             <a href="./home.html"><img src="./Images/logo.png" alt="" class="px-5" /></a>
             <div class="d-flex gap-2 align-items-center">
                 <a href="./login.html" class="btn rounded h-50 text-white login">Login</a>
@@ -38,57 +38,118 @@
                     </div>
 
                     <div class="row g-4">
-                        <div class="col-md-6 text-white">
-                            <div class="border-0 rounded-3 p-4 h-100 shadow-sm">
+                        <!-- right border remove karna hai jab mobile ki with me hogi-->
+                        <div class="col-md-6 text-white border-end">   
+                            <div class="border-0 rounded-1 p-4 h-100 shadow-sm">
                                 <h2 class="h6 fw-bold mb-3">FREQUENTLY ASKED QUESTIONS</h2>
-
-                                <div class="border-top pt-2">
-                                    <div>
-                                        <div
-                                            class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                                            <div class="gap-2 d-flex">
-                                                <i class="bi bi-handbag-fill"></i>
-                                                <a>Toggle first element</a>
+                                <div class="pt-2 d-grid gap-2">
+                                    <div class="accordion" id="privacyAccordion">
+                                        <div class="rounded-1 overflow-hidden border">
+                                            <h2 class="accordion-header d-flex justify-content-between align-items-center px-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                <button
+                                                    class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center">
+                                                    <div>
+                                                        <i class="fa-solid fa-store fs-6"></i>
+                                                        <span class="fs-6">How do I track my order?</span>
+                                                    </div>
+                                                </button>
+                                                <span class="text-white fw-bold h5">+</span>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#privacyAccordion">
+                                                <div class="accordion-body bg-secondary text-white ">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                                                    voluptates sequi
+                                                </div>
                                             </div>
-                                            <span class="btn-primary text-primary fw-bold h5 mb-0"
-                                                data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-                                                aria-expanded="false" aria-controls="multiCollapseExample1">+
-                                            </span>
                                         </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                                    <div class="card card-body bg-secondary">
-                                                        Some placeholder content for the first collapse
-                                                        component of this multi-collapse example. This
-                                                        panel is hidden by default but revealed when the
-                                                        user activates the relevant trigger.
+                                    </div>
+
+                                    <div class="d-flex w-100 justify-content-between align-items-center">
+                                        <div class="w-100">
+                                            <div class="accordion" id="privacyAccordion">
+                                                <div class="rounded-1 overflow-hidden border">
+                                                    <h2 class="accordion-header d-flex justify-content-between align-items-center px-2"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo">
+                                                        <button
+                                                            class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100">
+                                                            <div>
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                                <span class="fs-6">How do I get a refund?</span>
+                                                            </div>
+                                                        </button>
+                                                        <span class="text-white fw-bold h5">+</span>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                                        data-bs-parent="#privacyAccordion">
+                                                        <div class="accordion-body bg-secondary text-white ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Facere
+                                                            voluptates sequi
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                                        <div class="gap-2 d-flex">
-                                            <i class="bi bi-credit-card-fill"></i>
-                                            <span class="text-white">How do I get a refund?</span>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="w-100">
+                                            <div class="accordion" id="privacyAccordion">
+                                                <div class="rounded-1 overflow-hidden border">
+                                                    <h2 class="accordion-header d-flex justify-content-between align-items-center px-2"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree">
+                                                        <button
+                                                            class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100">
+                                                            <div>
+                                                                <i class="fa-solid fa-motorcycle"></i>
+                                                                <span class="fs-6">My rider is late. What do I do?</span>
+                                                            </div>
+                                                        </button>
+                                                        <span class="text-white fw-bold h5">+</span>
+                                                    </h2>
+                                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                                        data-bs-parent="#privacyAccordion">
+                                                        <div class="accordion-body bg-secondary text-white ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Facere
+                                                            voluptates sequi
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <span class="text-primary fw-bold h5 mb-0">+</span>
                                     </div>
-                                    <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                                        <div class="gap-2 d-flex">
-                                            <i class="bi bi-bicycle"></i>
-                                            <span class="text-white">My rider is late. What do I do?</span>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="w-100">
+                                            <div class="accordion" id="privacyAccordion">
+                                                <div class="rounded-1 overflow-hidden border">
+                                                    <h2 class="accordion-header d-flex justify-content-between align-items-center px-2"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour">
+                                                        <button
+                                                            class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100">
+                                                            <div>
+                                                                <i class="fa-solid fa-user"></i>
+                                                                <span class="fs-6">How do I update my account info?</span>
+                                                            </div>
+                                                        </button>
+                                                        <span class="text-white fw-bold h5">+</span>
+                                                    </h2>
+                                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                                        data-bs-parent="#privacyAccordion">
+                                                        <div class="accordion-body bg-secondary text-white ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Facere
+                                                            voluptates sequi
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <span class="text-primary fw-bold h5 mb-0">+</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                                        <div class="gap-2 d-flex">
-                                            <i class="bi bi-person-fill"></i>
-                                            <span class="text-white">How do I update my account info?</span>
-                                        </div>
-                                        <span class="text-primary fw-bold h5 mb-0">+</span>
                                     </div>
                                 </div>
                             </div>
