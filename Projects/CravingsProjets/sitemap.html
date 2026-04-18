@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body class="d-grid">
+    <header>
+        <nav class="navbar d-flex justify-content-between align-items-center px-lg-5 px-md-4 px-sm-3 px-1 ">
+            <a href="./home.html"><img src="./Images/logo.png" alt="" class="px-5" /></a>
+            <div class="d-flex gap-2 align-items-center">
+                <a href="./login.html" class="btn rounded h-50 text-white login">Login</a>
+                <a href="./register.html" class="btn rounded h-50 register btn-light header-register">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="position-relative overflow-hidden" style="height: 45vh">
+        <img src="./Images/commonBG.avif" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
+            alt="Privacy Banner" />
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+
+        <div class="container h-25 position-relative pt-5 ">
+            <div class="row justify-content-center align-items-center h-100 text-center mt-4">
+                <div class="col-lg-8">
+                    <i class="fa-chisel fa-regular fa-map fa-beat policy display-5 mb-3"></i>
+
+                    <h2 class="display-5 fw-bold text-white">
+                        Site <span class="policy">Map</span>
+                    </h2>
+
+                    <p class="text-white opacity-75 fs-6 mb-4">
+                        A complete overview of every page on the Cravings platform.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="privacy-second-section">
+        <div class="container py-4 px-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-9">
+                    <p class="text-center text-secondary lh-lg mb-5">
+                        These Terms of Service ("Terms") govern your access to and use of
+                        the
+                        <strong class="fw-bold text-black">Cravings</strong> platform,
+                        including our website and mobile applications. By creating an
+                        account or placing an order, you agree to be bound by these Terms.
+                        If you do not agree, please do not use our services.
+                    </p>
+
+                    <div class="accordion" id="privacyAccordion">
+                        <div class="accordion-item rounded-4 mb-3 overflow-hidden border">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed py-3 px-4 fw-semibold fs-6 bg-transparent shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    <i class="bi bi-person-fill fs-4 policy me-3"></i>
+                                    1. User Accounts
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#privacyAccordion">
+                                <div class="accordion-body bg-light text-secondary">
+                                    <ul class="">
+                                        <li class="mb-2">
+                                            Access: request a copy of the personal data we hold
+                                            about you.
+                                        </li>
+                                        <li class="mb-2">
+                                            Correction: update or correct inaccurate information via
+                                            your account settings.
+                                        </li>
+                                        <li class="mb-2">
+                                            Deletion: request erasure of your personal data (subject
+                                            to legal retention requirements).
+                                        </li>
+                                        <li class="mb-2">
+                                            Portability: receive your data in a structured,
+                                            machine-readable format.
+                                        </li>
+                                        <li class="mb-2">
+                                            Objection: opt out of marketing communications at any
+                                            time.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="height: 15vh">
+        <div class="w-100 h-100 d-flex align-items-center justify-content-center" style="background: #c2410c">
+
+            <p><span class="text-white opacity-50">Can't find what you're looking for?</span><a
+                    class="text-decoration-none text-white opacity-100" href="./help-center.html"> Visit our Help
+                    Center</a></p>
+        </div>
+    </section>
+
+    <footer class="footer text-light pt-5 pb-4 mb-3">
+        <div class="container">
+            <!-- Top Text -->
+            <p class="text-center mb-5 small px-2">
+                --- Your favorite food delivery platform connecting customers with
+                restaurants and riders. ---
+            </p>
+
+            <!-- Main Content -->
+            <div class="row gy-5 d-flex justify-content-around align-items-start">
+                <!-- Logo -->
+                <div class="col-12 col-md-2 d-flex justify-content-start justify-content-md-start">
+                    <img src="./Images/footer-logo.png" class="rounded-circle img-fluid" style="max-width: 120px"
+                        alt="logo" />
+                </div>
+                <!-- Quick Links -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <a href="./home.html" class="d-block text-decoration-none text-light small mb-2">Home</a>
+                    <a href="./about.html" class="d-block text-decoration-none text-light small mb-2">About</a>
+                    <a href="./order-now.html" class="d-block text-decoration-none text-light small">Order Now</a>
+                </div>
+
+                <!-- Restaurants -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-bold mb-3">For Restaurants</h6>
+                    <a href="./register.html" class="d-block text-decoration-none text-light small mb-2">Partner With
+                        Us</a>
+                    <a href="#" class="d-block text-decoration-none text-light small">Restaurant Dashboard</a>
+                </div>
+
+                <!-- Riders -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-bold mb-3">For Riders</h6>
+                    <a href="./register.html" class="d-block text-decoration-none text-light small mb-2">Become a
+                        Rider</a>
+                    <a href="#" class="d-block text-decoration-none text-light small">Rider Dashboard</a>
+                </div>
+
+                <!-- Support -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-bold mb-3">Feedback & Support</h6>
+                    <a href="./feedback.html" class="d-block text-decoration-none text-light small mb-2">Submit
+                        Feedback</a>
+                    <a href="./help-center.html" class="d-block text-decoration-none text-light small mb-2">Help
+                        Center</a>
+                    <a href="./contact.html" class="d-block text-decoration-none text-light small">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-secondary my-4" />
+
+            <!-- Bottom -->
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2 py-3">
+                <p class="mb-0 small">© 2026 Cravings. All rights reserved.</p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-3 small">
+                    <a href="./privacy-policy.html" class="text-light text-decoration-none">Privacy Policy</a>
+                    <a href="./terms-of-service.html" class="text-light text-decoration-none">Terms of Service</a>
+                    <a href="./sitemap.html " class="text-light text-decoration-none">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

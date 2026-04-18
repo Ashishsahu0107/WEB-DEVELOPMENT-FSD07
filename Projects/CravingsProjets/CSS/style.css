@@ -49,6 +49,7 @@ header {
   border: 1px solid var(--color-base-100);
 }
 
+
 .images img {
   height: 85vh;
 }
@@ -233,10 +234,6 @@ input {
   border: 1px solid var(--color-primary);
   border-radius: 10px;
   width: 80%;
-}
-
-::placeholder {
-  color: #e09c9b;
 }
 
 .featuredRestaurant-menu .orderNow-top-input input {
