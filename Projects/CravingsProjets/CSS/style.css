@@ -49,7 +49,6 @@ header {
   border: 1px solid var(--color-base-100);
 }
 
-
 .images img {
   height: 85vh;
 }
@@ -305,55 +304,72 @@ hr {
   border: 2px solid white;
 }
 
-
 /* contact page */
 
-.contact-image{
+.contact-image {
   height: 85vh !important;
 }
 
-.feedback-image{
+.feedback-image {
   height: 90vh !important;
 }
 
-
-
 /* help center */
 
-.help-center-input{
-  background: #9D9FA1 !important;
+.help-center-input {
+  background: #9d9fa1 !important;
   color: #444343;
-  border: 0px solid #9D9FA1;
+  border: 0px solid #9d9fa1;
 }
 
-.btn-help-center{
+.btn-help-center {
   background: var(--color-primary);
   color: var(--color-base-100);
 }
 
-.questionmark-icon{
+.questionmark-icon {
   color: var(--color-primary);
 }
 
-
 /* privacy and policy */
 
-.policy{
+.policy {
   color: var(--color-primary) !important;
 }
 
-.privacy-second-section{
-  background: var(--color-base-100) ;
+.privacy-second-section {
+  background: var(--color-base-100);
 }
 
-.accordion-item{
-  background: var(--color-base-100) ;
-  border: 1px solid #E7D9C9;
+.accordion-item {
+  background: var(--color-base-100);
+  border: 1px solid #e7d9c9;
 }
 
 ul li::marker {
+  color: var(--color-primary);
+}
+
+.sitemap-main {
+  i {
     color: var(--color-primary);
+  }
+
+  h5 {
+    color: var(--color-primary);
+    font-size: 1rem;
+  }
 }
 
 
+.overall-rating{
 
+  i:first-child{
+    color: orange;
+  }
+
+  i:hover{
+    color: orange;
+  }
+
+}
