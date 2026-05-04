@@ -1,4 +1,4 @@
-async function getData(value) {
+function getData(value) {
 
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -18,14 +18,8 @@ async function getData(value) {
 // console.log(myPromise);
 
 
-// getData(1)
-//     .then(() => getData(2))
-//     .then(() => getData(3))
-//     .then(() => getData(4))
-//     .catch((rej) => console.log(rej))
-
-
-await getData(1)
-await getData(2)
-await getData(3)
-await getData(4)
+getData(1)
+    .then(() => getData(2))
+    .then(() => getData(3))
+    .then(() => getData(4))
+    .catch((rej) => console.log(rej))
