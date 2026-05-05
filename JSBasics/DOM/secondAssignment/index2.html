@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 2</title>
+  <style>
+    body {
+      transition: background 0.3s;
+    }
+
+    #result2 {
+      margin-top: 10px;
+      border: 2px solid black;
+      padding: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="email" id="email" placeholder="Email"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+
+  <button onclick="submitForm()">Submit</button>
+
+  <div id="result2"></div>
+
+  <script>
+    function submitForm() {
+      const email = document.getElementById("email").value;
+      const pass = document.getElementById("password").value;
+
+      const result = document.getElementById("result2");
+      result.innerText = `Email: ${email}, Password: ${pass}`;
+      result.style.display = "block";
+
+      // background change
+      document.body.style.backgroundColor = "#d1f7c4";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,11 +1,20 @@
-let a = 8;
-let b = 8;
+// let a = 8;
+// let b = 8;
 
-function sum(x, y){
-    let z = x + y;
-    console.log(z);
+// function sum(x, y){
+//     let z = x + y;
+//     console.log(z);
+// }
+// sum(a, b);
+
+
+// non parametrized function
+
+function welcome() {
+    console.log("Welcome");
 }
-sum(a, b);
+
+welcome();
 
 
 // const sum = (a, b) => {
