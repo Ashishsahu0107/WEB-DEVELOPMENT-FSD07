@@ -17,10 +17,7 @@
 // console.log(arr.indexOf(85));
 // console.log(arr.includes(89));
 
-let arr = [5, 4, 3, 2, 4, 9, 5, 1];
-console.log(arr.sort());
+let arr = [454, 65, 8, 5, 64, 58, 685, 64, 82, 86, 45, 52, 54, 6, 4, 6];
+arr.sort((a,b) => a-b );
 
-arr.forEach((ele) => {
-    console.log(ele.sort);
-    
-})
+console.log(arr);

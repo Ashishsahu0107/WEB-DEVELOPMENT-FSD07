@@ -2,56 +2,108 @@
 <html>
   <head>
     <title>Assignment 1</title>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-   <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div class="d-flex justify-content-center mt-45 flex-row gap-5 ">
-      <div class="form-box">
-        <input type="text" id="name" placeholder="Name" required class="form-control" /><br /><br />
-        <input type="text" id="city" placeholder="City" class="form-control" required /><br /><br />
+  <body class="bg-warning">
+    <div class="d-flex justify-content-center mt-45 flex-row gap-5">
+      <!-- first -->
 
-        <button onclick="showData()" class="w-100 btn text-gray-500">Submit</button>
+      <div
+        class="shadow-lg p-5 w-25 border border-1 border-black rounded-5 grid gap-4 bg-[orange]"
+      >
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          required
+          class="form-control border-warning bg-transparent" 
+        />
+        <input
+          type="text"
+          id="city"
+          placeholder="City"
+          class="form-control border-warning bg-transparent"
+          required
+        />
+
+        <button
+          onclick="showData()"
+          class="w-100 btn text-gray-500 text-white bg-black"
+        >
+          Submit
+        </button>
 
         <div id="result1"></div>
       </div>
-      <div class="form-box">
-        <input type="email" id="email" placeholder="Email" /><br /><br />
+
+      <!-- second -->
+
+      <div
+        class="shadow-lg p-5 w-25 border border-1 border-black rounded-5 grid gap-4 bg-[orange]"
+      >
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="form-control border-warning bg-transparent"
+        />
         <input
           type="password"
           id="password"
           placeholder="Password"
-        /><br /><br />
+          class="form-control border-warning bg-transparent"
+        />
 
-        <button onclick="submitForm()">Submit</button>
+        <button
+          onclick="submitForm()"
+          class="w-100 btn text-gray-500 text-white bg-black"
+        >
+          Submit
+        </button>
 
         <div id="result2"></div>
       </div>
-      <div class="form-box">
+
+      <!-- third -->
+
+      <div
+        class="shadow-lg p-5 w-25 border border-1 border-black rounded-5 grid gap-4 bg-[orange]"
+      >
         <input
           type="text"
           id="fname"
           placeholder="First Name"
+          class="form-control border-warning bg-transparent"
           required
-        /><br /><br />
+        />
         <input
           type="text"
           id="lname"
           placeholder="Last Name"
+          class="form-control border-warning bg-transparent"
           required
-        /><br /><br />
+        />
 
-        <button onclick="showFullName()">Submit</button>
+        <button
+          onclick="showFullName()"
+          class="w-100 btn text-gray-500 text-white bg-black"
+        >
+          Submit
+        </button>
 
         <div id="result3"></div>
       </div>
     </div>
+
     <script>
-
-
-
       function showData() {
         const name = document.getElementById("name").value;
         const city = document.getElementById("city").value;
@@ -61,31 +113,26 @@
         result.style.display = "block";
       }
 
-
-
       function submitForm() {
-      const email = document.getElementById("email").value;
-      const pass = document.getElementById("password").value;
+        const email = document.getElementById("email").value;
+        const pass = document.getElementById("password").value;
 
-      const result = document.getElementById("result2");
-      result.innerText = `Email: ${email}, Password: ${pass}`;
-      result.style.display = "block";
+        const result = document.getElementById("result2");
+        result.innerText = `Email: ${email}, Password: ${pass}`;
+        result.style.display = "block";
 
-      // background change
-      document.body.style.backgroundColor = "#d1f7c4";
-    }
+        // background change
+        document.body.style.backgroundColor = "#d1f7c4";
+      }
 
+      function showFullName() {
+        const fname = document.getElementById("fname").value;
+        const lname = document.getElementById("lname").value;
 
-
-
-    function showFullName() {
-      const f = document.getElementById("fname").value;
-      const l = document.getElementById("lname").value;
-
-      const result = document.getElementById("result3");
-      result.innerText = `Full Name: ${f} ${l}`;
-      result.style.display = "block";
-    }
+        const result = document.getElementById("result3");
+        result.innerText = `Fname : ${fname} Lname : ${lname}`;
+        result.style.display = "block";
+      }
     </script>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
