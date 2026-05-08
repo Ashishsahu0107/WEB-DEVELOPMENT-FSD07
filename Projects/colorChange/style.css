@@ -1,0 +1,22 @@
+#main{
+    display: flex;
+    width: 50%;
+    height: 200px;
+    border: 2px solid black;
+}
+
+#bgChange{
+    width: 80%;
+    padding: 10px;
+}
+
+
+#secondbg{
+    width: 50%;
+    border-left: 8px solid green;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
