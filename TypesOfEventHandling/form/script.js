@@ -17,8 +17,6 @@ document.querySelector("form").addEventListener("submit", (event) => {
     document.getElementById("fullname").value = ""; 
     document.getElementById("email").value = ""; 
     document.getElementById("password").value = ""; 
-    
-
 });
 
 

@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, red, green,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 30%;
+    border: 2px solid black;
+}
+
+
+input{
+    padding: 10px 50px;
+}
+
+button{
+    padding: 20px;
+    border: 1px solid green;
+    display: block;
+}
+
+.item1{
+    display: flex;
+}
