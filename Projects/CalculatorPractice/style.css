@@ -1,0 +1,105 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg,#f8d8df,#c9d7ff);
+      overflow:hidden;
+    }
+
+    .calculator{
+      width:290px;
+      padding:14px;
+      border-radius:30px;
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: blur(10px);
+      border:2px solid rgba(255,255,255,0.4);
+      box-shadow:
+      8px 8px 20px rgba(0,0,0,0.12),
+      -8px -8px 20px rgba(255,255,255,0.4);
+      /* transform: skew(-5deg); */
+    }
+
+    .display{
+      height:110px;
+      width:260px;
+      background:#c9e0d4;
+      border-radius:18px 18px 0 0;
+      display:flex;
+      align-items:flex-end;
+      justify-content:flex-end;
+      padding:20px;
+      font-size:34px;
+      color:#222;
+      margin-bottom:6px;
+      box-shadow: inset 3px 3px 8px rgba(0,0,0,0.08);
+      border: 2px solid gray;
+    }
+
+    .buttons{
+      background:#f6d7db;
+      padding:18px 14px;
+      border-radius:0 0 20px 20px;
+      outline: 2px solid gray;
+
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
+      gap:14px;
+    }
+
+    button{
+      height:50px;
+      width:50px;
+      border:none;
+      border-radius:50%;
+      cursor:pointer;
+      font-size:18px;
+      background:#f3f3f3;
+
+      box-shadow:
+      5px 5px 10px rgba(0,0,0,0.08),
+      -5px -5px 10px rgba(255,255,255,0.8);
+
+      transition:0.2s;
+    }
+
+    button:active{
+      transform:scale(0.95);
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+      background: linear-gradient(to right, pink, rgb(227, 210, 20));
+    }
+
+    button:hover{
+        background-color: rgb(234, 132, 8);
+        box-shadow: 0 0 5px 3px bisque;
+        
+    }
+
+    .operator{
+      background:#FFC107; 
+      color:#000000;
+      font-size:22px;
+    }
+
+
+
+    .equal{
+      grid-column: span 2;
+      width:100%;
+      border-radius:40px;
+      background:#198754;
+      color:#fff;
+      font-size:24px;
+    }
+
+    /* .example{
+        display: grid;
+        grid-template-columns: auto auto  auto auto;
+    } */
