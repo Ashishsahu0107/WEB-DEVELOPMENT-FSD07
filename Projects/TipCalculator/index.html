@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card" aria-labelledby="title">
+        <h1 id="title">Tip Calculator</h1>
+
+        <div class="field">
+          <label for="billAmount">Enter bill amount</label>
+          <input
+            id="billAmount"
+            type="number"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="e.g. 120.50"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="servicePercent">How was the service?</label>
+          <select id="servicePercent" required>
+            <option value="25">25% - Top Notch</option>
+            <option value="20">20% - Excellent</option>
+            <option value="15" selected>15% - Good</option>
+            <option value="10">10% - Bad</option>
+            <option value="5">5% - Worst</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="peopleCount">Total number of people</label>
+          <input
+            id="peopleCount"
+            type="number"
+            min="1"
+            step="1"
+            inputmode="numeric"
+            placeholder="e.g. 3"
+            required
+          />
+        </div>
+
+        <button id="calculateBtn" type="button">Calculate</button>
+
+        <section class="result" aria-live="polite">
+          <h2>Result</h2>
+          <p id="resultText">Enter values and click Calculate.</p>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

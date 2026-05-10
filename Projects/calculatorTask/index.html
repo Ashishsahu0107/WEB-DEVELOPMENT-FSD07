@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soft Calculator UI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="main">
-        <div class="container">
-            <div class="inputbox">
-                <input type="text" id="input">
-            </div>
-            <div class="numberbox">
-                <div class="item1">
-                    <button>%</button>
-                    <button>CE</button>
-                    <button>C</button>
-                    <button>cross</button>
-                </div>
-                <div class="item1">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>*</button>
-                </div>
-                <div class="item1">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>-</button>
-                </div>
-                <div class="item1">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>+</button>
-                </div>
-                <div class="item1">
-                    <button>/</button>
-                    <button>0</button>
-                    <button>.</button>
-                    <button>=</button>
-                </div>
-            </div>
-        </div>
 
+  <div class="calculator">
+
+    <div class="display"  id="text">4</div>
+    <!-- <input type="text" class="display" value="0"> -->
+
+    <div class="buttons">
+
+      <button onclick="Calculate('AC')">AC</button>
+      <button onclick="Calculate('C')">C</button>
+      <button onclick="Calculate('%')">%</button>
+      <button onclick="Calculate('/')" class="operator">/</button>
+
+      <button onclick="Calculate('7')" onclick="appendValue()">7</button>
+      <button onclick="Calculate('8')">8</button>
+      <button onclick="Calculate('9')">9</button>
+      <button onclick="Calculate('*')" class="operator">*</button>
+
+      <button onclick="Calculate('4')">4</button>
+      <button onclick="Calculate('5')">5</button>
+      <button onclick="Calculate('6')">6</button>
+      <button onclick="Calculate('-')" class="operator">-</button>
+
+      <button onclick="Calculate('1')">1</button>
+      <button onclick="Calculate('2')">2</button>
+      <button onclick="Calculate('3')">3</button>
+      <button onclick="Calculate('+')" class="operator">+</button>
+
+      <button onclick="Calculate('0')">0</button>
+      <button onclick="Calculate('.')">.</button>
+
+      <button onclick="Calculate('=')" class="equal">=</button>
     </div>
-
-
-    <script src="./app.js"></script>
+  </div>
+  <script src="./app.js"></script>
 </body>
 </html>
