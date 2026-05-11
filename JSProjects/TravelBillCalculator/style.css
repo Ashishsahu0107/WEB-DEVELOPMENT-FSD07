@@ -1,0 +1,52 @@
+:root {
+  --accent: #0d6efd;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(13, 110, 253, 0.12), transparent 55%),
+    radial-gradient(900px 500px at 90% 15%, rgba(25, 135, 84, 0.10), transparent 50%),
+    #f8f9fa;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #1a7cff, #0d6efd);
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.25);
+}
+
+.result-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.breakdown-item .left {
+  font-weight: 600;
+}
+
+.badge-slab {
+  background: rgba(13, 110, 253, 0.12);
+  color: #0d6efd;
+  border: 1px solid rgba(13, 110, 253, 0.25);
+}
+
+.invalid-feedback {
+  color: #dc3545;
+}
+
