@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <div>
+        <h1>TODO List</h1>
+        <p class="muted">Add, complete, and manage your tasks.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat__value" id="totalCount">0</span>
+          <span class="stat__label">Total</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" id="activeCount">0</span>
+          <span class="stat__label">Active</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="composer" aria-label="Add new todo">
+      <form id="todoForm" class="composer__form">
+        <input
+          id="todoInput"
+          type="text"
+          placeholder="What do you need to do?"
+          maxlength="120"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="addBtn">Add</button>
+      </form>
+
+      <div class="composer__actions">
+        <button type="button" class="btn btn--ghost" id="clearCompletedBtn" disabled>
+          Clear Completed
+        </button>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Todo controls">
+      <div class="filters" role="tablist" aria-label="Filter todos">
+        <button type="button" class="filter is-active" data-filter="all">All</button>
+        <button type="button" class="filter" data-filter="active">Active</button>
+        <button type="button" class="filter" data-filter="completed">Completed</button>
+      </div>
+      <div class="searchHint muted">Click checkbox to complete. Press Delete to remove.</div>
+    </section>
+
+    <section class="list" aria-label="Todo list">
+      <div id="emptyState" class="empty">
+        <div class="empty__icon">✓</div>
+        <h3>No todos yet</h3>
+        <p class="muted">Add your first task above.</p>
+      </div>
+
+      <ul id="todoList" class="todoList" aria-live="polite"></ul>
+    </section>
+
+    <footer class="footer muted">
+      <span>Made with HTML • CSS • JavaScript</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
