@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Enter name" /><br /><br />
+
+      <input type="checkbox" id="agree" /> Agree<br /><br />
+
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female<br /><br />
+
+      <select id="city">
+        <option value="mumbai">Mumbai</option>
+        <option value="delhi">Delhi</option></select
+      ><br /><br />
+      <input type="file" id="fileInput" />
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <button type="button" onclick="handleForm()">Submit</button>
+    </form>
+
+    <br /><br /><br />
+    <form>
+      <input type="text" id="name" placeholder="Enter name" /><br /><br />
+      <input type="text" id="email" placeholder="Enter email" /><br /><br />
+      <input type="text" id="phone" placeholder="Enter phone" /><br /><br />
+
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
