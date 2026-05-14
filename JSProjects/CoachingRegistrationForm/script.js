@@ -1,21 +1,61 @@
-document.getElementById("submitRegistrationform").addEventListener("submit", (event) => {
-    event.preventDefault();
+document
+    .getElementById("submitRegistrationform")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    const fn = document.getElementById("fullname").value;
-    const gndr = document.querySelectorAll("input=[name='gender']:checked")?.value;
-
-
-
-    const timings = [];
-
-    document.querySelectorAll("input[name='timings']:checked").forEach((item) => {
-        timings.push(item.value);
-    })
+        let fullname = document.getElementById("fullname").value;
+        let email = document.getElementById("email").value;
+        let mobile = document.getElementById("mobilenumber").value;
 
 
-    console.log(gndr);
-    console.log(timings);
-    
-})
+        let gender = document.querySelector(
+            "input[name='gender']:checked"
+        );
 
 
+        let timings = document.querySelectorAll(
+            "input[name='timings']:checked"
+        );
+
+        if (fullname == "") {
+            alert("Enter Full Name");
+            return;
+        }
+
+        if (email == "") {
+            alert("Enter Email");
+            return;
+        }
+
+
+        if (mobile.length != 10) {
+            alert("Enter 10 digit mobile number");
+            return;
+        }
+
+        if (gender == null) {
+            alert("Select Gender");
+            return;
+        }
+
+        if (timings.length == 0) {
+            alert("Select Batch Timing");
+            return;
+        }
+
+        alert("Form Submitted Successfully");
+
+        console.log({
+            fullname,
+            email,
+            mobile,
+            gender,
+            dob,
+            timings,
+            address,
+            city,
+            pincode,
+            guardianName,
+            guardianNumber,
+        });
+    });
