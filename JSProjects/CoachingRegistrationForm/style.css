@@ -1,14 +1,12 @@
-/* CoachingRegistrationForm - styling only */
+/* CoachingRegistrationForm - Bootstrap-first styling (minimal overrides) */
 
 :root {
   --bg: #f4f7ff;
-  --card: #ffffff;
   --text: #0f172a;
   --muted: #475569;
-  --primary: #2563eb;
-  --primary-600: #1d4ed8;
   --border: rgba(15, 23, 42, 0.12);
-  --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+  --shadow: 0 12px 35px rgba(2, 6, 23, 0.1);
+  --radius: 16px;
 }
 
 * {
@@ -17,11 +15,26 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    "Apple Color Emoji",
     "Segoe UI Emoji";
-  background: radial-gradient(1000px 500px at 20% 0%, #dbeafe 0%, transparent 55%), var(--bg);
+  background:
+    radial-gradient(1000px 500px at 20% 0%, #dbeafe 0%, transparent 55%),
+    var(--bg);
   color: var(--text);
   min-height: 100vh;
+  background: linear-gradient(to right, rgb(241, 210, 210), rgb(214, 134, 215));
+}
+
+.container{
+  display: flex;
+  justify-content: center;
 }
 
 header {
@@ -33,7 +46,18 @@ header h1 {
   margin: 0;
   font-size: clamp(1.25rem, 2.2vw, 2rem);
   letter-spacing: 0.2px;
-  font-weight: 800;
+  font-weight: 900;
+  background-clip: var(--text);
+  background: linear-gradient(to right, #12ee06, #3329f4);
+   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+header p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-weight: 600;
 }
 
 main {
@@ -44,112 +68,140 @@ main {
 
 form {
   width: 100%;
-  max-width: 860px;
+  max-width: 900px;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 22px;
 }
 
-form div {
-  margin-top: 16px;
-  margin-bottom: 12px;
-  padding: 10px 12px;
-  background: linear-gradient(90deg, rgba(37, 99, 235, 0.10), rgba(37, 99, 235, 0.04));
-  border: 1px solid rgba(37, 99, 235, 0.18);
-  border-radius: 12px;
-  color: var(--primary-600);
-  font-weight: 800;
-}
-
-form h2 {
-  margin: 18px 0 12px;
-  font-size: 1.15rem;
-  color: var(--text);
-  font-weight: 800;
-}
-
-label {
-  font-weight: 650;
-  color: var(--muted);
-}
-
-/* Improve spacing for each field wrapper */
+/* Section blocks */
 form > div,
 form > h2 {
-  /* keep for structure */
+  margin-top: 16px;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 99, 235, 0.12),
+    rgba(37, 99, 235, 0.04)
+  );
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 14px;
+  color: var(--primary-700);
+  font-weight: 900;
 }
 
-form > div + div,
-form > div + h2,
-form h2 + div {
-  /* subtle spacing */
+/* For actual headings inside the form */
+form h2 {
+  margin: 18px 0 12px;
+  font-size: 1.08rem;
+  line-height: 1.2;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="date"],
-input[type="time"],
-select,
+/* Labels */
+label {
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+/* Field wrapper spacing */
+form > div {
+  display: block;
+}
+
+/* Minimal overrides for Bootstrap inputs */
 textarea {
-  width: 100%;
-  padding: 11px 12px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: #fff;
-  outline: none;
-  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
-}
-
-textarea {
-  min-height: 110px;
+  min-height: 120px;
   resize: vertical;
-}
-
-select {
-  appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, rgba(37, 99, 235, 0.9) 50%),
-    linear-gradient(135deg, rgba(37, 99, 235, 0.9) 50%, transparent 50%);
-  background-position: calc(100% - 18px) calc(1em + 1px), calc(100% - 12px) calc(1em + 1px);
-  background-size: 6px 6px, 6px 6px;
-  background-repeat: no-repeat;
-  padding-right: 34px;
-}
-
-
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: rgba(37, 99, 235, 0.65);
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
 }
 
 .form-control,
 .form-select {
-  border-radius: 12px !important;
-  border-color: var(--border) !important;
-  padding: 11px 12px !important;
-  background: #fff !important;
-}
-
-.form-label {
-  margin-bottom: 6px;
-  display: inline-block;
-}
-
-button,
-input[type="submit"] {
-  border: none;
-  background: var(--primary);
-  color: #fff;
-  font-weight: 750;
-  padding: 11px 16px;
   border-radius: 12px;
-  cursor: pointer;
-  transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+  border-color: var(--border);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(37, 99, 235, 0.65);
+  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.18);
+}
+
+/* Checkbox / Radio groups */
+input[type="checkbox"],
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
 }
 
 
+/* Reduce visual clutter in the timing row */
+.d-flex.gap-3 label {
+  margin-right: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
 
+/* Place action buttons nicely (keep Bootstrap button theme) */
+form > button[type="submit"],
+form > button[type="reset"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 160px;
+  margin-top: 12px;
+  border-radius: 12px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+form button + button {
+  margin-left: 12px;
+}
+
+
+/* Validation UI (in case script adds it later) */
+.field-error {
+  margin-top: 6px;
+  color: #dc2626;
+  font-weight: 750;
+  font-size: 0.92rem;
+}
+
+.is-invalid {
+  /* align with Bootstrap validation look */
+  border-color: rgba(220, 38, 38, 0.9) !important;
+  box-shadow: 0 0 0 0.25rem rgba(220, 38, 38, 0.12) !important;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  form {
+    padding: 16px;
+  }
+
+  .d-flex.justify-content-around {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  form > button[type="submit"],
+  form > button[type="reset"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  form button + button {
+    margin-left: 0;
+  }
+}
