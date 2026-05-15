@@ -88,9 +88,13 @@ function printDataDisplay() {
     );
     BUTTON.onclick = () => LI.remove();
 
+    BUTTON.onclick = () => {
+      LI.remove();
+      removeTaskFromLocalStorage(element);
+    };
+
     const I = document.createElement("i");
     I.classList.add("bi", "bi-trash");
-
 
     const SPAN2 = document.createElement("span");
     SPAN2.innerText = "Delete";
@@ -116,9 +120,9 @@ function printDataDisplay() {
 printDataDisplay();
 
 
-function removeTask(taskItem) {
-  
-  const oldTaskArray = JSON.parse(localStorage.getItem("toDoTask")) || [];
+function removeTaskFromLocalStorage(taskItem) {
+
+  const oldTaskArray = JSON.parse(localStorage.getItem("toDoTask"));
 
 
   const newTaskArray = oldTaskArray.filter((item) => item !== taskItem);
@@ -127,7 +131,6 @@ function removeTask(taskItem) {
   const newTaskString = JSON.stringify(newTaskArray)
 
   localStorage.setItem("toDoTask", newTaskString);
-
 
 }
 
