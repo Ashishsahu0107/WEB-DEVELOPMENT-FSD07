@@ -83,7 +83,9 @@
         border-radius: 999px;
         background: #ffffff;
         font-weight: 800;
-        transition: transform 0.04s ease, box-shadow 0.15s ease;
+        transition:
+          transform 0.04s ease,
+          box-shadow 0.15s ease;
       }
 
       .btn:active {
@@ -151,9 +153,7 @@
     <div class="container">
       <h1>Saved Registrations (localStorage)</h1>
       <div class="top">
-        <div class="muted">
-          Key: <code>coaching_registrations</code>
-        </div>
+        <div class="muted">Key: <code>coaching_registrations</code></div>
         <button id="refreshBtn" class="btn btn-outline-primary">Refresh</button>
         <button id="clearBtn" class="btn btn-danger">Clear All</button>
       </div>
@@ -188,7 +188,8 @@
         rawEl.textContent = JSON.stringify(list, null, 2);
 
         if (!list.length) {
-          tableWrapEl.innerHTML = "<p class='muted'>No data saved yet. Submit the registration form first.</p>";
+          tableWrapEl.innerHTML =
+            "<p class='muted'>No data saved yet. Submit the registration form first.</p>";
           return;
         }
 
@@ -211,7 +212,7 @@
             const cells = headers
               .map((h) => {
                 const v = item?.[h];
-                const text = Array.isArray(v) ? v.join(", ") : v ?? "";
+                const text = Array.isArray(v) ? v.join(", ") : (v ?? "");
                 return `<td>${String(text).replaceAll("<", "<")}</td>`;
               })
               .join("");
@@ -245,4 +246,3 @@
     </script>
   </body>
 </html>
-
