@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saved Registrations - LocalStorage</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Storage page styling (uses Bootstrap if present, otherwise plain CSS) */
+      body {
+        padding: 24px;
+        background: linear-gradient(
+          135deg,
+          rgba(219, 234, 254, 0.7) 0%,
+          rgba(255, 255, 255, 0.6) 45%,
+          rgba(239, 68, 68, 0.08) 100%
+        );
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(1.4rem, 2.4vw, 2rem);
+        margin: 0 0 18px;
+        font-weight: 900;
+        letter-spacing: 0.2px;
+      }
+
+      h3 {
+        margin: 20px 0 10px;
+        font-weight: 850;
+        opacity: 0.95;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+        padding: 16px;
+      }
+
+      pre {
+        background: #0b1220;
+        color: #d7e1ff;
+        padding: 16px;
+        border-radius: 12px;
+        overflow: auto;
+        white-space: pre;
+        word-break: break-word;
+      }
+
+      .top {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+      }
+
+      .muted {
+        opacity: 0.8;
+        font-weight: 700;
+      }
+
+      code {
+        background: rgba(15, 23, 42, 0.08);
+        padding: 2px 8px;
+        border-radius: 999px;
+        border: 1px solid rgba(15, 23, 42, 0.1);
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .btn {
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: #ffffff;
+        font-weight: 800;
+        transition: transform 0.04s ease, box-shadow 0.15s ease;
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+
+      .btn-outline-primary {
+        border-color: rgba(59, 130, 246, 0.35);
+        color: rgb(37, 99, 235);
+      }
+
+      .btn-danger {
+        border-color: rgba(239, 68, 68, 0.35);
+        color: rgb(185, 28, 28);
+        background: rgba(239, 68, 68, 0.06);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 14px;
+        overflow: hidden;
+        border-radius: 14px;
+      }
+
+      th,
+      td {
+        border: 1px solid rgba(42, 58, 90, 0.35);
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+        background: rgba(255, 255, 255, 0.55);
+      }
+
+      th {
+        background: linear-gradient(90deg, #0f1a2e, #1b2a4a);
+        color: #e6eefc;
+        font-weight: 900;
+      }
+
+      tbody tr:hover td {
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .section {
+        display: grid;
+        gap: 12px;
+      }
+
+      .tableWrap {
+        overflow-x: auto;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 16px;
+        }
+        .top {
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Saved Registrations (localStorage)</h1>
+      <div class="top">
+        <div class="muted">
+          Key: <code>coaching_registrations</code>
+        </div>
+        <button id="refreshBtn" class="btn btn-outline-primary">Refresh</button>
+        <button id="clearBtn" class="btn btn-danger">Clear All</button>
+      </div>
+
+      <div id="status" class="muted"></div>
+
+      <h3>Table</h3>
+      <div id="tableWrap"></div>
+
+      <h3>Raw JSON</h3>
+      <pre id="raw"></pre>
+    </div>
+
+    <script>
+      const STORAGE_KEY = "coaching_registrations";
+
+      const statusEl = document.getElementById("status");
+      const rawEl = document.getElementById("raw");
+      const tableWrapEl = document.getElementById("tableWrap");
+      const refreshBtn = document.getElementById("refreshBtn");
+      const clearBtn = document.getElementById("clearBtn");
+
+      function load() {
+        let list = [];
+        try {
+          list = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+        } catch (e) {
+          list = [];
+        }
+
+        statusEl.textContent = `Total saved: ${list.length}`;
+        rawEl.textContent = JSON.stringify(list, null, 2);
+
+        if (!list.length) {
+          tableWrapEl.innerHTML = "<p class='muted'>No data saved yet. Submit the registration form first.</p>";
+          return;
+        }
+
+        // Best-effort table
+        const headers = [
+          "fullname",
+          "email",
+          "mobile",
+          "dob",
+          "gender",
+          "timings",
+          "course",
+          "city",
+          "pincode",
+          "guardianName",
+        ];
+
+        const rows = list
+          .map((item, idx) => {
+            const cells = headers
+              .map((h) => {
+                const v = item?.[h];
+                const text = Array.isArray(v) ? v.join(", ") : v ?? "";
+                return `<td>${String(text).replaceAll("<", "<")}</td>`;
+              })
+              .join("");
+            return `<tr><td>${idx + 1}</td>${cells}</tr>`;
+          })
+          .join("");
+
+        const ths = headers.map((h) => `<th>${h}</th>`).join("");
+        tableWrapEl.innerHTML = `
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                ${ths}
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        `;
+      }
+
+      refreshBtn.addEventListener("click", load);
+      clearBtn.addEventListener("click", () => {
+        localStorage.removeItem(STORAGE_KEY);
+        load();
+      });
+
+      load();
+    </script>
+  </body>
+</html>
+

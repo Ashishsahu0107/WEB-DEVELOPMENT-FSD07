@@ -22,7 +22,9 @@
 
     <main>
       <div class="container row">
+        <a href="./storage.html" class="ms-3 mb-3">View Saved Data (localStorage)</a>
         <form id="submitRegistrationform" class="card shadow-sm col-8 p-3">
+
           <div class="card-body">
             <div class="section-title mb-3 fs-3">Personal Information</div>
             <div class="row g-3">
@@ -60,7 +62,7 @@
                   <input
                     type="number"
                     name="mobilenumber"
-                    id="mobilenumber"
+                    id="mobilenumber"     
                     placeholder="Enter your number"
                     class="form-control"
                     required
@@ -84,7 +86,7 @@
 
             <div class="mt-3">
               <div class="h6 mb-2">Gender</div>
-              <div class="d-flex gap-4">
+              <div class="d-flex gap-4 flex-wrap">
                 <div class="form-check">
                   <input
                     class="form-check-input"
@@ -124,8 +126,15 @@
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label class="form-label" for="personal">Last Qualification</label>
-                  <select name="personal" id="personal" class="form-select" required>
+                  <label class="form-label" for="personal"
+                    >Last Qualification</label
+                  >
+                  <select
+                    name="personal"
+                    id="personal"
+                    class="form-select"
+                    required
+                  >
                     <option disabled selected value="">
                       select your Last Completed Qualification
                     </option>
@@ -141,7 +150,9 @@
                 <div class="mb-3">
                   <label class="form-label" for="grade">Percentage/Grade</label>
                   <select name="grade" id="grade" class="form-select" required>
-                    <option disabled selected value="">Percentage/Grade in Last Qualification</option>
+                    <option disabled selected value="">
+                      Percentage/Grade in Last Qualification
+                    </option>
                     <option value="A">A</option>
                     <option value="B">B</option>
                     <option value="C">C</option>
@@ -167,17 +178,29 @@
               </select>
             </div>
 
-            <label class="section-title mt-3 ">Batch Timing</label>
+            <label class="section-title mt-3">Batch Timing</label>
 
             <div class="mb-3">
               <div class="d-flex flex-wrap gap-4">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="timings" id="morning" value="morning" />
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="timings"
+                    id="morning"
+                    value="morning"
+                  />
                   <label class="form-check-label" for="morning">Morning</label>
                 </div>
 
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="timings" id="evening" value="evening" />
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="timings"
+                    id="evening"
+                    value="evening"
+                  />
                   <label class="form-check-label" for="evening">Evening</label>
                 </div>
 
@@ -189,12 +212,22 @@
                     id="afterNoon"
                     value="afterNoon"
                   />
-                  <label class="form-check-label" for="afterNoon">AfterNoon</label>
+                  <label class="form-check-label" for="afterNoon"
+                    >AfterNoon</label
+                  >
                 </div>
 
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="timings" id="weekends" value="weekends" />
-                  <label class="form-check-label" for="weekends">Weekends</label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="timings"
+                    id="weekends"
+                    value="weekends"
+                  />
+                  <label class="form-check-label" for="weekends"
+                    >Weekends</label
+                  >
                 </div>
               </div>
             </div>
@@ -202,7 +235,9 @@
             <div class="section-title mt-3 mb-3 fs-3">Address</div>
 
             <div class="mb-3">
-              <label for="address" class="form-label">Residential Address</label>
+              <label for="address" class="form-label"
+                >Residential Address</label
+              >
               <textarea
                 name="address"
                 id="address"
@@ -215,14 +250,26 @@
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="city" class="form-label">City</label>
-                  <input type="text" name="city" id="city" class="form-control" required />
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="form-control"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="pincode" class="form-label">Pin Code</label>
-                  <input type="number" name="pincode" id="pincode" class="form-control" required />
+                  <input
+                    type="number"
+                    name="pincode"
+                    id="pincode"
+                    class="form-control"
+                    required
+                  />
                 </div>
               </div>
             </div>
@@ -232,7 +279,9 @@
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label for="guardianFullName" class="form-label">Guardian’s Full Name</label>
+                  <label for="guardianFullName" class="form-label"
+                    >Guardian’s Full Name</label
+                  >
                   <input
                     type="text"
                     name="guardianFullName"
@@ -245,7 +294,9 @@
 
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label for="guardianContactNumber" class="form-label">Guardian’s Contact Number</label>
+                  <label for="guardianContactNumber" class="form-label"
+                    >Guardian’s Contact Number</label
+                  >
                   <input
                     type="number"
                     name="guardianContactNumber"
@@ -258,8 +309,22 @@
             </div>
 
             <div class="d-flex justify-content-between flex-wrap gap-3 mt-3">
-              <button type="submit" class="btn btn-outline-primary rounded-pill px-2">Submit</button>
-              <button type="reset" class="btn-warning btn shadow-none border-0 p-3" style="border-top-left-radius: 20px; border-bottom-right-radius: 20px;">Reset</button>
+              <button
+                type="submit"
+                class="btn btn-outline-primary rounded-pill px-2"
+              >
+                Submit
+              </button>
+              <button
+                type="reset"
+                class="btn-warning btn shadow-none border-0 p-3"
+                style="
+                  border-top-left-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                "
+              >
+                Reset
+              </button>
             </div>
           </div>
         </form>
@@ -274,4 +339,3 @@
     ></script>
   </body>
 </html>
-

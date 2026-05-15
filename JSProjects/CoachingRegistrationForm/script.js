@@ -1,8 +1,11 @@
 const form = document.getElementById("submitRegistrationform");
 
+const STORAGE_KEY = "coaching_registrations";
+
 function setFieldError(el, message) {
   if (!el) return;
   el.classList.add("is-invalid");
+
 
   // Create/update error element
   const existing = document.getElementById(`${el.id}-error`);
@@ -201,6 +204,20 @@ form.addEventListener("submit", function (event) {
 
   console.log("Form Submitted Successfully:", payload);
 
+  // Save into localStorage
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    const list = raw ? JSON.parse(raw) : [];
+    list.push(payload);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+
+    // Optional: keep latest submission
+    localStorage.setItem("latest_coaching_registration", JSON.stringify(payload));
+  } catch (e) {
+    console.error("Failed to save to localStorage:", e);
+  }
+
   console.log("Form Submitted Successfully");
 });
+
 
