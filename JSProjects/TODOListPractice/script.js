@@ -86,7 +86,6 @@ function printDataDisplay() {
       "align-items-center",
       "justify-content-center",
     );
-    BUTTON.onclick = () => LI.remove();
 
     BUTTON.onclick = () => {
       LI.remove();
