@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Changer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
-        <div id="bgChange" onclick="bgChange()">
-            <h1 id="heading">This is heading</h1>
-            <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, optio quam. Deleniti ullam quisquam maiores quasi officiis! Reprehenderit aliquam libero optio cum! Dolorem dolorum dolore ipsa officiis perferendis, dignissimos sint.</p>
+    <div class="page-shell">
+        <div class="card">
+            <section class="preview" id="bgChange">
+                <div class="preview-label">Live Preview</div>
+                <h1 id="heading">Stylish Color Changer</h1>
+                <p id="paragraph">Use the controls to customize the background, heading, and paragraph colors in real time.</p>
+            </section>
 
-        </div>
-        <div id="secondbg">
-            <div>
-                <span>BackGround Color: </span>
-                <input type="color"  id="colorbg">
-            </div>
-            <div>
-                <span>Heading color: </span>
-                <input type="color" name="" id="colorheading">
-            </div>
-            <div>
-                <span>Para color : </span>
-                <input type="color" name="" id="colorpara">
-            </div>
-            <div>
-
-                <button onclick="reset()">reload</button>
-            </div>
+            <aside class="controls" aria-label="Color controls">
+                <h2>Customize colors</h2>
+                <div class="control-row">
+                    <label for="colorbg">Background color</label>
+                    <input type="color" id="colorbg" value="#ffffff">
+                </div>
+                <div class="control-row">
+                    <label for="colorheading">Heading color</label>
+                    <input type="color" id="colorheading" value="#1f2937">
+                </div>
+                <div class="control-row">
+                    <label for="colorpara">Paragraph color</label>
+                    <input type="color" id="colorpara" value="#4b5563">
+                </div>
+                <button id="resetBtn" type="button">Reset</button>
+            </aside>
         </div>
     </div>
 
-    
     <script src="./app.js"></script>
 </body>
 </html>
