@@ -9,31 +9,27 @@
 // console.log(8);
 
 
-function show(value, nextData) {
-    setTimeout(() => {
-        console.log("I am test", value);
+// function show(value, nextData) {
+//     setTimeout(() => {
+//         console.log("I am test", value);
 
-        if (nextData) {
-            nextData();
-        }
-    }, 4000)
-}
+//         if (nextData) {
+//             nextData();
+//         }
+//     }, 4000)
+// }
 
-show("Prasoon", () => {
-    show("Anit", () => {
-        show("Ashish", () => {
-            show("Shubham", () => {
-                show("Priyanshu", () => {
-                    console.log("No Data Found");
-                })
-            })
-        })
-    });
-});
-
-
-
-
+// show("Prasoon", () => {
+//     show("Anit", () => {
+//         show("Ashish", () => {
+//             show("Shubham", () => {
+//                 show("Priyanshu", () => {
+//                     console.log("No Data Found");
+//                 })
+//             })
+//         })
+//     });
+// });
 
 
 
