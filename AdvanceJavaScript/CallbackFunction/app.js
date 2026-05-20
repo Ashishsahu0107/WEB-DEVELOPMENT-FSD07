@@ -55,3 +55,13 @@
 
 
 
+// function showMessage(message) {
+//   console.log(message)
+// }
+
+// function doTask(callback) {
+//   const data = "Task complete"
+//   callback(data)
+// }
+
+// doTask(showMessage)
