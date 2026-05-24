@@ -1,14 +1,11 @@
 async function GetNewJoke() {
     // const API_URL = "https://v2.jokeapi.dev/joke/Programming,Miscellaneous";
 
-
     const url = "https://official-joke-api.appspot.com/types";
-
 
     const response = await fetch(url);
 
     const data = await response.json();
-    
 
     document.getElementById("setup").innerText = data.message;
     // document.getElementById("delivery").innerHTML = data.punchline ;
