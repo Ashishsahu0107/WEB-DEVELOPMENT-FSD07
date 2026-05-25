@@ -1,4 +1,4 @@
-﻿const API_Key = "";
+﻿const API_Key = "`";
 
 async function getWheather() {
   const cityName = document.getElementById("cityName").value.trim();
