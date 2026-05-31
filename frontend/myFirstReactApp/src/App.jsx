@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Header from './components/Header'
+import Main from './components/Hero'
+import Footer from './components/Footer'
 
-const App = () => {
+function App () {
   return (
     <>
-      <div className='text-center'>
-        <h1 className='text-9xl text-red-500 capitalize font-bold'>Ashish sahu</h1>
-      </div>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }

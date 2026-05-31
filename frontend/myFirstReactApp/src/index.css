@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+#header{
+    background: #d30d0d;
+}
+#hero{
+    background: #0dd32b;
+}
+#footer{
+    background: #3f0dd3;
+}
