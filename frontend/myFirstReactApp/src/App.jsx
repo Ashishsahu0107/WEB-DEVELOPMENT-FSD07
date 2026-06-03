@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
-import Hero from './pages/Hero'
+import Home from './pages/Home'
 import About from './pages/About'
 import Project from './pages/Projects'
 import Footer from './components/Footer'
@@ -19,17 +19,15 @@ const App = () => {
     <BrowserRouter>
       <Header />
 
-      <div className='flex'>
-        <Sidebar />
+      
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
         </Routes>
-      </div>
 
 
       <Footer />
