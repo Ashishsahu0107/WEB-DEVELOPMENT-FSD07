@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 const Hero = () => {
-    const [ userName, setUserName ] = useState("");
-    const [ city, setCity ] = useState("");
+    const [userName, setUserName] = useState("");
+    const [city, setCity] = useState("");
     return (
         <>
-            <input type="text" name='userName' onChange={(e) => setUserName(e.target.value)}/>
+            <input type="text" name='userName' onChange={(e) => setUserName(e.target.value)} />
             <div >
                 This is my name {userName}
             </div>

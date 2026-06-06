@@ -7,7 +7,7 @@ const Header = () => {
     const [count, setCount] = useState(0);
     return (
         <>
-            <nav className='flex justify-between px-12 h-16 items-center bg-[var(--bg-color)] '>
+            <nav className='flex sticky top-0 justify-between px-12 h-16 items-center bg-[var(--bg-color)] '>
                 <Link to={"./"}>
                     <img src="header-logo.png" alt="header-images" className='h-14 '/>
                 </Link>

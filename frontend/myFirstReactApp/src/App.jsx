@@ -1,15 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Project from './pages/Projects'
 import Footer from './components/Footer'
 import Skills from './pages/Skills'
-import Projects from './pages/Projects';
+import Projects from './pages/Projects'
 import Login from './pages/Login'
 import Register from './pages/Register'
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar'
 
 const App = () => {
 
