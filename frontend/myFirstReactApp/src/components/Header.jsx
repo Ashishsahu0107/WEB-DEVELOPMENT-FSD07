@@ -5,7 +5,7 @@ import { Link, Routes, Route, BrowserRouter } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-            <nav className='flex sticky top-0 justify-between px-12 h-16 items-center bg-[var(--bg-color)] '>
+            <nav className='flex sticky top-0 z-99 justify-between px-12 h-16 items-center bg-[var(--bg-color)] '>
                 <Link to={"./"}>
                     <img src="header-logo.png" alt="header-images" className='h-14 '/>
                 </Link>
