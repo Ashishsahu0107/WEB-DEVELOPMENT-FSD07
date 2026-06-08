@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import bgImage from '../assets/register.png'
 
 const Register = () => {
 
@@ -26,7 +27,8 @@ const Register = () => {
     }
     return (
         <>
-            <div className='relative h-[90vh] bg-[url("/login-dashboard.png")] bg-yellow-400 grid items-center justify-end bg-cover bg-center md:ps-30 '>
+            <div className='relative h-[90vh] bg-[url("/login-dashboard.png")] backdrop-blur-3xl bg-yellow-400 grid items-center justify-end bg-cover bg-center md:ps-30 '>
+                <img src={bgImage} alt=""  className='bg-cover absolute w-full h-[90vh] '/>
                 <div className='absolute right-30'>
                     <div className='bg-white p-10 grid gap-4 rounded-md w-100'>
                         <div>

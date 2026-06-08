@@ -17,7 +17,7 @@ const Login = () => {
 
     return (
         <>
-            <div className='h-[90vh] bg-[url("/login-dashboard.png")] bg-yellow-400 grid items-center justify-start bg-cover bg-center md:ps-30 '>
+            <div className='h-[90vh] bg-[url("/login.png")] bg-yellow-400 grid items-center justify-start bg-cover bg-center md:ps-30 '>
                 <div className='bg-white p-10 grid gap-8 rounded-md w-100'>
                     <div>
                         <h1 className='text-4xl text-center font-semibold text-[var(--bg-color)] '>Welcome Back</h1>
