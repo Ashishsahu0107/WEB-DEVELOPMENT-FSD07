@@ -4,3 +4,7 @@
 :root{
     --bg-color: #C2410C;
 }
+
+.btnRegister{
+    @apply 
+}
