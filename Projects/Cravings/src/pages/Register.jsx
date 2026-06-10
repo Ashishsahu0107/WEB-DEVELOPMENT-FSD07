@@ -28,7 +28,7 @@ const Register = () => {
     return (
         <>
             <div className='relative h-[90vh] bg-[url("/login-dashboard.png")] backdrop-blur-3xl bg-yellow-400 grid items-center justify-end bg-cover bg-center md:ps-30 '>
-                <img src={bgImage} alt=""  className='bg-cover absolute w-full h-[90vh] '/>
+                <img src={bgImage} alt="" className='bg-cover absolute w-full h-[90vh] ' />
                 <div className='absolute right-30'>
                     <div className='bg-white p-10 grid gap-4 rounded-md w-100'>
                         <div>
@@ -41,15 +41,15 @@ const Register = () => {
                                 <div>
                                     <div className='flex gap-3'>
                                         <div className='flex gap-2'>
-                                            <input type="radio" name="resortApp" id="customer" checked={resortApp === 'customer'} value={resortApp} onChange={(e) => setResortApp(e.target.value)}/>
+                                            <input type="radio" name="resortApp" id="customer" checked={resortApp === 'customer'} value={resortApp} onChange={(e) => setResortApp(e.target.value)} />
                                             <label htmlFor="costumer">Customer</label>
                                         </div>
                                         <div className='flex gap-2'>
-                                            <input type="radio" name="resortApp" id="restaurant" checked={resortApp === 'restorant'} value={resortApp} onChange={(e) => setResortApp(e.target.value)}/>
+                                            <input type="radio" name="resortApp" id="restaurant" checked={resortApp === 'restorant'} value={resortApp} onChange={(e) => setResortApp(e.target.value)} />
                                             <label htmlFor="restaurant">Restaurant</label>
                                         </div>
                                         <div className='flex gap-2'>
-                                            <input type="radio" name="resortApp" id="rider" checked={resortApp === 'rider'} value={resortApp} onChange={(e) => setResortApp(e.target.value)}/>
+                                            <input type="radio" name="resortApp" id="rider" checked={resortApp === 'rider'} value={resortApp} onChange={(e) => setResortApp(e.target.value)} />
                                             <label htmlFor="rider">Rider</label>
                                         </div>
                                     </div>
