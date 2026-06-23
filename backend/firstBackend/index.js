@@ -7,6 +7,8 @@ import PublicRouter from './src/routers/public.route.js';
 
 const app = express(); // object
 
+app. use(express.json());I
+
 app.use("/auth", AuthRouter);
 app.use("/public", PublicRouter);
 
