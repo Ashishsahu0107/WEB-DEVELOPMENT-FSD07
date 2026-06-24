@@ -14,6 +14,9 @@ export const LoginUser = async (req, res) => {
             res.status(409).json({ message: "Email Already Registered" });
             return;
         }
+
+
+        
         
         //create a new user registration will do this tomarrow
 
