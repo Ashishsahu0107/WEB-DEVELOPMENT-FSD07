@@ -19,10 +19,16 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome to my first backend Projects" });
 })
 
+app.use((err, req, res, next) => {
+    const ErrMessage = err.message || "Internal Server Error";
+    const ErrStatusCode = err.ErrStatusCode || 500;
+    
+
+    res.status(ErrStatusCode).json({ message: ErrStatusCode });
+});
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log("Server Started on port : ", port);
     connectDB();
 });
-
-
