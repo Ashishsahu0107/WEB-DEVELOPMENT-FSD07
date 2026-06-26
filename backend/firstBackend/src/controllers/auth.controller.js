@@ -42,7 +42,7 @@ export const RegisterUser = async (req, res, next) => {
     }
 };
 
-export const LoginUser = async (req, res) => {
+export const LoginUser = async (req, res,next) => {
     try {
 
         const { email, password } = req.body;
@@ -53,25 +53,31 @@ export const LoginUser = async (req, res) => {
             return next(error);
         }
 
-        const existingUser = await User.findOne({ email, password });
-        if (existingUser) {
-            const error = new Error("Email already registred");
-            error.statusCode = 409;
+        const existingUser = await User.findOne({ email });
+
+        if (!existingUser) {
+            const error = new Error("Email not registred");
+            error.statusCode = 404;
             return next(error);
         }
 
-        const newUser = await User.create({
-            email,
-            password,
+        if (password !== existingUser.password) {
+            const error = new Error("Incorrect Password");
+            error.statusCode = 401;
+            return next(error);
+        }
+
+        res.status(200).json({
+            message: "WelCome Back",
+            data: existingUser,
         });
 
-        res.status(201).json({ message: "User Created Successfully" });
-
     } catch (error) {
+        console.log(error.message);
         next();
     }
 };
 
 export const LogoutUser = (req, res) => {
-    res.json({ message: "Logout Successfull form controller" });
+    
 };
