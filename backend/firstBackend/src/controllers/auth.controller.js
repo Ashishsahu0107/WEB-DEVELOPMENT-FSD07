@@ -3,31 +3,29 @@ import User from "../models/user.model.js";
 export const RegisterUser = async (req, res, next) => {
 
     try {
-
         const { fullName, email, password, phone, gender, dob } = req.body;
 
         if (!fullName || !email || !password || !phone || !gender || !dob) {
-            const error = new Error("All Field Required");
-            error.ErrStatusCode = 400;
+            const error = new Error("All fields Required");
+            error.statusCode = 400;
             return next(error);
         }
 
         const existingUser = await User.findOne({ email });
         if (existingUser) {
-            res.status(409).json({ message: "Email Already Registered" });
-            return;
+            const error = new Error("Email already registred");
+            error.statusCode = 409;
+            return next(error);
         }
 
-
         const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
-
 
         const photo = {
             url: photoUrl,
             publicId: null,
         };
 
-        await User.create({
+        const newUser = await User.create({
             fullName,
             email,
             password,
@@ -37,29 +35,41 @@ export const RegisterUser = async (req, res, next) => {
             photo,
         });
 
-        console.log(2);
-        
-
         res.status(201).json({ message: "User Created Successfully" });
 
     } catch (error) {
-
-        next(error);
+        next();
     }
 };
 
 export const LoginUser = async (req, res) => {
-    // try {
+    try {
 
-    //     const { email, password } = req.body;
+        const { email, password } = req.body;
 
-    //     if (!email || !password) {
-    //         res.status(400).json({ message: "All Fields Required" });
-    //     }
+        if (!email || !password) {
+            const error = new Error("All fields Required");
+            error.statusCode = 400;
+            return next(error);
+        }
 
-    // } catch (error) {
+        const existingUser = await User.findOne({ email, password });
+        if (existingUser) {
+            const error = new Error("Email already registred");
+            error.statusCode = 409;
+            return next(error);
+        }
 
-    // }
+        const newUser = await User.create({
+            email,
+            password,
+        });
+
+        res.status(201).json({ message: "User Created Successfully" });
+
+    } catch (error) {
+        next();
+    }
 };
 
 export const LogoutUser = (req, res) => {
